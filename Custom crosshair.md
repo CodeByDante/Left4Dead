@@ -15,3 +15,7 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 > [!NOTE]
 > Existen programas dentro de Steam que permiten modificar el *crosshair*, pero algunos de ellos son de pago, entre otras opciones."
 
+<h1>Título Principal</h1>
+<h2>Subtítulo</h2>
+<h3>Título menor</h3>
+
