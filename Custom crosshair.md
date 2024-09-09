@@ -14,32 +14,3 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 
 > [!NOTE]
 > Existen programas dentro de Steam que permiten modificar el *crosshair*, pero algunos de ellos son de pago, entre otras opciones."
-
-<h1>Título Principal</h1>
-<h2>Subtítulo</h2>
-<h3>Título menor</h3>
-
-<pre><code>
-Aquí tu código.
-</code></pre>
-
-<div style="border: 1px solid #ddd; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);">
-  <h3>Título de la Tarjeta</h3>
-  <p>Este es el contenido de la tarjeta. Puedes agregar más información aquí.</p>
-</div>
-
-<a href="https://github.com" style="text-decoration: none; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px;">Visita GitHub</a>
-
-<table style="border-collapse: collapse; width: 100%;">
-  <tr style="background-color: #f2f2f2;">
-    <th style="border: 1px solid #ddd; padding: 8px;">Encabezado 1</th>
-    <th style="border: 1px solid #ddd; padding: 8px;">Encabezado 2</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #ddd; padding: 8px;">Dato 1</td>
-    <td style="border: 1px solid #ddd; padding: 8px;">Dato 2</td>
-  </tr>
-</table>
-<blockquote style="border-left: 4px solid #ff6b6b; padding-left: 10px; color: #555;">
-  Este es un texto de cita estilizado para destacar más.
-</blockquote>
