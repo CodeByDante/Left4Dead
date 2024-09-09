@@ -40,3 +40,6 @@ Aquí tu código.
     <td style="border: 1px solid #ddd; padding: 8px;">Dato 2</td>
   </tr>
 </table>
+<blockquote style="border-left: 4px solid #ff6b6b; padding-left: 10px; color: #555;">
+  Este es un texto de cita estilizado para destacar más.
+</blockquote>
