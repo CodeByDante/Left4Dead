@@ -23,4 +23,8 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 Aquí tu código.
 </code></pre>
 
-<span style="color: red;">Texto en rojo</span>
+<div style="border: 1px solid #ddd; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);">
+  <h3>Título de la Tarjeta</h3>
+  <p>Este es el contenido de la tarjeta. Puedes agregar más información aquí.</p>
+</div>
+
