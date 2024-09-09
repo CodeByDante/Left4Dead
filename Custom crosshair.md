@@ -19,3 +19,8 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 <h2>Subtítulo</h2>
 <h3>Título menor</h3>
 
+<pre><code>
+Aquí tu código.
+</code></pre>
+
+<span style="color: red;">Texto en rojo</span>
