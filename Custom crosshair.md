@@ -29,3 +29,14 @@ Aquí tu código.
 </div>
 
 <a href="https://github.com" style="text-decoration: none; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px;">Visita GitHub</a>
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr style="background-color: #f2f2f2;">
+    <th style="border: 1px solid #ddd; padding: 8px;">Encabezado 1</th>
+    <th style="border: 1px solid #ddd; padding: 8px;">Encabezado 2</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Dato 1</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">Dato 2</td>
+  </tr>
+</table>
