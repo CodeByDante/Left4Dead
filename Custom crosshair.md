@@ -1,3 +1,4 @@
+
 # "Personalice el *crosshair* a su preferencia dentro del juego."
 Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro de la pantalla. Se hace instalando ReShade y aplicando un shader personalizado o usando una herramienta dentro de ReShade, como el Layer.fx, que permite dibujar la mira sobre el juego en tiempo real. Esto ayuda a mejorar la precisión de apuntado sin modificar el juego directamente.
 
@@ -12,7 +13,7 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 
  #  **1. Descargar el programa**
 
-   [![Descargar ReShade](https://img.shields.io/badge/Descargar-ReShade%204.7.0-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/ReShade_Setup_4.7.0.exe)
+   [![Descargar ReShade](https://img.shields.io/badge/Descargar%20Reshade-000000?style=flat-square&logo=download&logoColor=white)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/ReShade_Setup_4.7.0.exe)
 
    **Instalar el programa**
    
