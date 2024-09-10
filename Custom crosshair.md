@@ -35,19 +35,25 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
    
 # **4 Configurar la mira**:
    - Salta el tutorial.
-   - Descarga el archivo croshair.zip
-   - Elige el color que prefieras, copia la mira seleccionada y reemplázala en la carpeta del juego.
+   - Descarga el archivo croshair.zip [![Descargar](https://img.shields.io/badge/Descargar-Crosshairs-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/crosshairs.zip)
+   - dentro de ese archivo estan dos carpetas  `crosshairs` y `Paquete de miras circulares`, elige la mira que prefieras
+     
+# **5 Ajustes finales**
 
-
-
-
-
+   - Accede a los archivos del juego y localiza la imagen `layer`. Aquí te dejo la ruta correspondiente:
+     
+     ```
+     C:\Program Files (x86)\Steam\steamapps\common\Left 4 Dead 2\reshade-shaders\Textures
+     ```
+     
+   - copia la mira seleccionada y reemplázala en la ruta correspondida . `recuerda cambiar el nombre del crosshair por el de Layer.pmg`
+   - Después de copiar la nueva mira en la carpeta adecuada, reemplaza el archivo correspondiente siguiendo las instrucciones.
+     
+#  **6 Ajustar el tamaño de la mira**:
+   - Desde el menú del juego, ajusta el tamaño de la mira para que se adapte a la resolución preferida.
 
 > [!NOTE]
 > Existen programas dentro de Steam que permiten modificar el *crosshair*, pero algunos de ellos son de pago, entre otras opciones."
-
-
-
 
 > [!IMPORTANT]
 > No asumo responsabilidad alguna por el uso que se le dé al archivo, incluyendo la modificación del *crosshair* para obtener alguna ventaja sobre otros jugadores.
