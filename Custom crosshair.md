@@ -10,15 +10,12 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
   <img src="https://raw.githubusercontent.com/SalvadorDante/Left4Dead/main/target.png" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
 
 
-
-# 1. Pasos de Instalacion 
-
-   **Descargar el programa**
+ #  **1. Descargar el programa**
 
    [![Descargar ReShade](https://img.shields.io/badge/Descargar-ReShade%204.7.0-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/ReShade_Setup_4.7.0.exe)
 
-
-2. **Instalar el programa**:
+   **Instalar el programa**
+   
    - Ejecuta como administrador el programa descargado.
    - Seleciona left 4 dead 2 .exe
    - Este programa funciona con otros juegos solo tienes que saber que motor grafico usa, en este caso left4dead2 usa el `(DirectX 9)`
@@ -27,9 +24,22 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
    - Desmarca todas las casillas excepto la opción de `"Layer"`
    - Completa la instalación.
 
-  # **Verificar la instalación**:
+ # **2. Verificar la instalación**:
    - Inicia el juego.
    - Verifica que aparezca un mensaje en la parte superior de la pantalla. Esto indicará que la instalación fue exitosa.
+     
+ # **3 Personalización de la mira**
+
+**Acceder al menú de personalización**
+ - Dentro del juego, presiona la tecla `Home` o en algunos teclados `inicio` para acceder al menú.
+   
+# **4 Configurar la mira**:
+   - Salta el tutorial.
+   - Descarga el archivo croshair.zip
+   - Elige el color que prefieras, copia la mira seleccionada y reemplázala en la carpeta del juego.
+
+
+
 
 
 
