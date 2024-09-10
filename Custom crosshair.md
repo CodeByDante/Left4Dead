@@ -13,8 +13,7 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
 
 # Pasos de Instalacion 
 
-
-Descargar un programa 
+Descargar el programa 
 
 Instalar el programa y seguir los pasos indicados, como seleccionar las opciones correctas en función del motor gráfico del juego (por ejemplo, DirectX 9).
 Desmarcar todas las casillas excepto la opción de "leer" y finalizar la instalación.
