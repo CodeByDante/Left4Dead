@@ -14,13 +14,11 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
 # Pasos de Instalacion 
 
 
-🔹 Pasos para modificar la mira:
+Descargar un programa 
 
-Descargar un programa específico y unos archivos que están en la descripción del video.
 Instalar el programa y seguir los pasos indicados, como seleccionar las opciones correctas en función del motor gráfico del juego (por ejemplo, DirectX 9).
 Desmarcar todas las casillas excepto la opción de "leer" y finalizar la instalación.
 Iniciar el juego para verificar si aparece un mensaje en la parte superior, lo que indicaría que el proceso se ha hecho correctamente.
-
 🔹 Personalización de la mira:
 
 Una vez en el juego, se puede acceder a un menú presionando la tecla home. Ahí se puede saltar el tutorial y ajustar la mira descargando una carpeta con cuatro opciones de colores: azul, naranja, roja y verde.
@@ -36,28 +34,6 @@ Finalmente, se prueba la nueva mira en el juego, ajustando su tamaño para que s
 
 > [!NOTE]
 > Existen programas dentro de Steam que permiten modificar el *crosshair*, pero algunos de ellos son de pago, entre otras opciones."
-
-El video que has compartido es un tutorial sobre cómo cambiar la mira (crosshair) en el videojuego Left 4 Dead 2. Aquí te dejo el resumen:
-
-🔹 Introducción:
-
-🔹 Pasos para modificar la mira:
-
-Descargar un programa específico y unos archivos que están en la descripción del video.
-Instalar el programa y seguir los pasos indicados, como seleccionar las opciones correctas en función del motor gráfico del juego (por ejemplo, DirectX 9).
-Desmarcar todas las casillas excepto la opción de "leer" y finalizar la instalación.
-Iniciar el juego para verificar si aparece un mensaje en la parte superior, lo que indicaría que el proceso se ha hecho correctamente.
-🔹 Personalización de la mira:
-
-Una vez en el juego, se puede acceder a un menú presionando la tecla home. Ahí se puede saltar el tutorial y ajustar la mira descargando una carpeta con cuatro opciones de colores: azul, naranja, roja y verde.
-El usuario elige la mira que más le guste, la copia, y la reemplaza en la carpeta del juego siguiendo los pasos indicados.
-🔹 Ajustes finales:
-
-Después de copiar la mira en la carpeta adecuada, se reemplaza un archivo y se ajusta el tamaño de la mira desde el menú del juego.
-Finalmente, se prueba la nueva mira en el juego, ajustando su tamaño para que se adapte a la resolución preferida.
-🔹 Conclusión: El video finaliza con una prueba en el juego para demostrar que la nueva mira funciona sin problemas. El creador se despide y agradece a los espectadores por ver el video.
-
-
 
 
 
