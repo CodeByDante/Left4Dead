@@ -11,7 +11,6 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 <p>
   <img src="https://raw.githubusercontent.com/SalvadorDante/Left4Dead/main/target.png" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
 
-  ![image](https://github.com/user-attachments/assets/a167100c-48a5-461a-896c-2ea728836e01)
 
 
 
