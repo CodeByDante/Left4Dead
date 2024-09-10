@@ -22,7 +22,7 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
    - Ejecuta como administrador el programa descargado.
    - Seleciona left 4 dead 2 .exe
    - Este programa funciona con otros juegos solo tienes que saber que motor grafico usa, en este caso left4dead2 usa el `(DirectX 9)`
-   - Desmarca todas las casillas excepto la opción de "leer".
+   - Desmarca todas las casillas excepto la opción de "Layer".
    - Completa la instalación.
 
 
