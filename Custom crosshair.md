@@ -13,7 +13,9 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
 
 # Pasos de Instalacion 
 
-Descargar el programa  [![Descargar ReShade](https://img.shields.io/badge/Descargar-ReShade%204.7.0-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/de
+Descargar el programa  
+[![Descargar ReShade](https://img.shields.io/badge/Descargar-ReShade%204.7.0-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/ReShade_Setup_4.7.0.exe)
+
 
 
 
