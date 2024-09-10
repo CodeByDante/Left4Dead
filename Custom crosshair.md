@@ -6,6 +6,11 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 
 Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro de la pantalla. Se hace instalando ReShade y aplicando un shader personalizado o usando una herramienta dentro de ReShade, como el Layer.fx, que permite dibujar la mira sobre el juego en tiempo real. Esto ayuda a mejorar la precisión de apuntado sin modificar el juego directamente.
 
+<p>
+  <img src="https://raw.githubusercontent.com/SalvadorDante/Left4Dead/main/target.png" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
+
+
+
 # Pasos de Instalacion 
 
 
@@ -52,9 +57,6 @@ Después de copiar la mira en la carpeta adecuada, se reemplaza un archivo y se 
 Finalmente, se prueba la nueva mira en el juego, ajustando su tamaño para que se adapte a la resolución preferida.
 🔹 Conclusión: El video finaliza con una prueba en el juego para demostrar que la nueva mira funciona sin problemas. El creador se despide y agradece a los espectadores por ver el video.
 
-
-<p>
-  <img src="https://raw.githubusercontent.com/SalvadorDante/Left4Dead/main/target.png" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
 
 
 
