@@ -16,6 +16,7 @@ Usaremos ReShade para agregar un crosshair superponiendo una imagen en el centro
 Descargar el programa  [![Descargar ReShade](https://img.shields.io/badge/Descargar-ReShade%204.7.0-blue)](https://github.com/SalvadorDante/Left4Dead/releases/download/de
 
 
+
 Instalar el programa y seguir los pasos indicados, como seleccionar las opciones correctas en función del motor gráfico del juego (por ejemplo, DirectX 9).
 Desmarcar todas las casillas excepto la opción de "leer" y finalizar la instalación.
 Iniciar el juego para verificar si aparece un mensaje en la parte superior, lo que indicaría que el proceso se ha hecho correctamente.
