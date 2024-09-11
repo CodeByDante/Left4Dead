@@ -9,7 +9,7 @@ Cuando nos conectamos a un servidor, nos comunicamos con él, y él con nosotros
 `cl_cmdrate 100`
 `cl_updaterate 60`
 `cl_interp_ratio 2`
-`cl_inter 0.1000000`
+`cl_interp 0.1000000`
 
 ## Los Peores:
 
