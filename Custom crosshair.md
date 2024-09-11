@@ -35,7 +35,9 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
    
 # **4 Configurar la mira**:
    - Salta el tutorial.
-   - Descarga el archivo croshair.zip [![Descargar Crosshairs](https://img.shields.io/badge/Descargar%20Crosshairs-000000?style=flat&logo=download&logoColor=white&color=333333)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/crosshairs.zip)
+   - Descarga el archivo croshair.zip
+   
+     [![Descargar Crosshairs](https://img.shields.io/badge/Descargar%20Crosshairs-000000?style=flat&logo=download&logoColor=white&color=333333)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/crosshairs.zip)
 
    - dentro de ese archivo estan dos carpetas  `crosshairs` y `Paquete de miras circulares`, elige la mira que prefieras
      
