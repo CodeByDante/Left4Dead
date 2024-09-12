@@ -8,8 +8,13 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 - **Ahorro de tiempo:** Simplifica tareas repetitivas.
 - **Facilidad de uso:** Diseñados para ser intuitivos y fáciles de instalar.
 
-¡Explora los scripts y optimiza tu experiencia de juego!
+### Desventajas
+- **Tener ventaja sobre los demas jugadores** si usas estos scripts para creerte mejor que otros automáticamente eres kbro.
+- **Posible desbalance:** Algunos scripts podrían afectar la experiencia de juego o crear una ventaja injusta.
+- **Dependencia:** Al automatizar demasiado, puedes perder habilidad manual o práctica en ciertas mecánicas del juego.
+- **Compatibilidad:** No todos los scripts funcionan en todas las configuraciones o servidores, lo que podría causar errores.
 
+¡Explora los scripts y optimiza tu experiencia de juego, teniendo en cuenta sus ventajas y desventajas!
 # Jump Rock             
 
 ```
