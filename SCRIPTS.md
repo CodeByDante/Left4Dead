@@ -19,6 +19,12 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 > [!NOTE]
 > ## Los scripts que veras ahora son comandos **basicos** que no son las gran cosa, son simples pero muy útiles 😉 
 
+# Aparece y desaparece los brazos/manos
+```
+bind o "toggle fov_desired 90; toggle cl_viewmodelfovsurvivor 180 80"
+```
+> Este bind funciona dos comandos para cuando ejecutemos la letra "o" apesca y desaparesca los brazos/manos.
+
 # Control de brillo
 ```
 bind "F7" "mat_monitorgamma_tv_enabled 0" // # Desactiva brillo maximo en el juego
