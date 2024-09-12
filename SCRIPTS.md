@@ -37,7 +37,20 @@ bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los 
 ```
 bind "M" "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
 ```
-> Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso 
+> Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso
+
+# bind voice_mute 
+```
+bind "F1" "voice_mute 1"    // # Mutea/Desmutea al jugador con ID 1 al presionar F1.
+bind "F2" "voice_mute 2"    // # Mutea/Desmutea al jugador con ID 2 al presionar F2.
+bind "F3" "voice_mute 3"    // # Mutea/Desmutea al jugador con ID 3 al presionar F3.
+bind "F4" "voice_mute 4"    // # Mutea/Desmutea al jugador con ID 4 al presionar F4.
+bind "F5" "voice_mute 5"    // # Mutea/Desmutea al jugador con ID 5 al presionar F5.
+bind "F6" "voice_mute 6"    // # Mutea/Desmutea al jugador con ID 6 al presionar F6.
+bind "F7" "voice_mute 7"    // # Mutea/Desmutea al jugador con ID 7 al presionar F7.
+bind "F8" "voice_mute 8"    // # Mutea/Desmutea al jugador con ID 8 al presionar F8.
+```
+> Esta es la continuación del otro comando despues de ver el numero del jugador usando `voice_show_mute` usa estos bind para silenciarlo aun más rapido. `recomiendo cambiar los bind, esos binds son muy udandos`
 
 # Coordenadas en el mapa
 ```
@@ -157,7 +170,7 @@ alias "Con" "bind mouse1 +shoot; echo --Cambios Aplicados!--"
 ```
 > El código está diseñado para ajustar configuraciones de movimiento y de la mira en el juego, y para permitir cambios rápidos entre configuraciones mediante mensajes informativos.
 
-# modificación de lerp al instante 
+# Modificación de lerp al instante 
 ```
 alias interp0 "cl_interp 0.000; bind L interp1"
 alias interp1 "cl_interp 0.0167; bind L interp2"
@@ -173,5 +186,53 @@ alias interp9 "cl_interp 0.100; bind L interp0"
 bind "L" "interp0"
 ```
 > este scripts hace que al ejecutar la tecla "L" los intervalos del comando 'cl_interp' suban
-> del 0.00/0.016/0.033/0.040/0.050 hasta 0.100 que es su valor predeterminado 
+> del 0.00/0.016/0.033/0.040/0.050 hasta 0.100 que es su valor predeterminado
+
+# Interpolation and variables
+
+```
+alias set_rates "cl_cmdrate 10; cl_updaterate 128; cl_interp_ratio 0; rate 128000"
+// # "set_rates" define varias configuraciones de red:
+// # cl_cmdrate 10 -> Limita la cantidad de comandos enviados al servidor a 10 veces por segundo.
+// # cl_updaterate 128 -> El servidor envía 128 actualizaciones por segundo al cliente.
+// # cl_interp_ratio 0 -> Factor de interpolación, usualmente 0 no se recomienda.
+// # rate 128000 -> Establece el máximo de bytes por segundo que el cliente puede recibir.
+
+alias interp0 "set_rates; cl_interp 0.000; bind L interp1"
+// # interp0: Aplica "set_rates" para ajustar las tasas de red y fija cl_interp en 0.000.
+// # Luego, reasigna la tecla L para que llame a interp1 en la siguiente pulsación.
+
+alias interp1 "set_rates; cl_interp 0.0167; bind L interp2"
+// # interp1: Fija cl_interp en 0.0167 y vincula la tecla L a interp2.
+
+alias interp2 "set_rates; cl_interp 0.0333; bind L interp3"
+// # interp2: Fija cl_interp en 0.0333 y vincula la tecla L a interp3.
+
+alias interp3 "set_rates; cl_interp 0.040; bind L interp4"
+// # interp3: Fija cl_interp en 0.040 y vincula la tecla L a interp4.
+
+alias interp4 "set_rates; cl_interp 0.050; bind L interp5"
+// # interp4: Fija cl_interp en 0.050 y vincula la tecla L a interp5.
+
+alias interp5 "set_rates; cl_interp 0.060; bind L interp6"
+// # interp5: Fija cl_interp en 0.060 y vincula la tecla L a interp6.
+
+alias interp6 "set_rates; cl_interp 0.070; bind L interp7"
+// # interp6: Fija cl_interp en 0.070 y vincula la tecla L a interp7.
+
+alias interp7 "set_rates; cl_interp 0.080; bind L interp8"
+// # interp7: Fija cl_interp en 0.080 y vincula la tecla L a interp8.
+
+alias interp8 "set_rates; cl_interp 0.090; bind L interp9"
+// # interp8: Fija cl_interp en 0.090 y vincula la tecla L a interp9.
+
+alias interp9 "set_rates; cl_interp 0.100; bind L interp0"
+// # interp9: Fija cl_interp en 0.100 y vincula la tecla L de vuelta a interp0, creando un ciclo.
+
+bind "L" "interp0"
+// # Inicialmente, la tecla L está vinculada a interp0, que comienza el ciclo de cambios en cl_interp.
+```
+> ### Este es un Script personal, es el mismo de arriba pero con más comandos ejecutandoce 
+> resumen: Cada vez que presionas la tecla L, se ajustan las tasas de red mediante set_rates y se cambia el valor de cl_interp en secuencia. El ciclo vuelve a empezar una vez que llegas a interp9.
+
 
