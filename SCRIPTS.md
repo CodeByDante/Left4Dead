@@ -75,4 +75,38 @@ m_customaccel_scale             "0"       // # Valor de aceleración personaliza
 > Estos comandos están configurados para eliminar cualquier forma de aceleración y suavizado del ratón, lo cual es esencial para una precisión óptima en juegos de alta competencia. 
 > La idea es proporcionar un control del ratón más predecible y directo, sin interferencias del sistema operativo o del juego
 
+# Mejor movimiento
+```
+alias +mfwd "dsp_volume 0;-back;+forward;alias checkfwd +forward"    // # Activa el movimiento hacia adelante y desactiva el movimiento hacia atrás; establece el volumen del sonido a 0 y mantiene el movimiento hacia adelante activo mientras esté presionado.
+alias +mback "dsp_volume 0;-forward;+back;alias checkback +back"    // # Activa el movimiento hacia atrás y desactiva el movimiento hacia adelante; establece el volumen del sonido a 0 y mantiene el movimiento hacia atrás activo mientras esté presionado.
+alias +mleft "dsp_volume 0;-moveright;+moveleft;alias checkleft +moveleft"    // # Activa el movimiento hacia la izquierda y desactiva el movimiento hacia la derecha; establece el volumen del sonido a 0 y mantiene el movimiento hacia la izquierda activo mientras esté presionado.
+alias +mright "dsp_volume 0;-moveleft;+moveright;alias checkright +moveright"    // # Activa el movimiento hacia la derecha y desactiva el movimiento hacia la izquierda; establece el volumen del sonido a 0 y mantiene el movimiento hacia la derecha activo mientras esté presionado.
+alias -mfwd "-forward;checkback;alias checkfwd none"    // # Detiene el movimiento hacia adelante y llama al alias `checkback` para mantener el movimiento hacia atrás activo; desactiva el alias `checkfwd`.
+alias -mback "-back;checkfwd;alias checkback none"    // # Detiene el movimiento hacia atrás y llama al alias `checkfwd` para mantener el movimiento hacia adelante activo; desactiva el alias `checkback`.
+alias -mleft "-moveleft;checkright;alias checkleft none"    // # Detiene el movimiento hacia la izquierda y llama al alias `checkright` para mantener el movimiento hacia la derecha activo; desactiva el alias `checkleft`.
+alias -mright "-moveright;checkleft;alias checkright none"    // # Detiene el movimiento hacia la derecha y llama al alias `checkleft` para mantener el movimiento hacia la izquierda activo; desactiva el alias `checkright`.
+alias checkfwd "none"    // # Alias vacío utilizado para desactivar el movimiento hacia adelante.
+alias checkback "none"    // # Alias vacío utilizado para desactivar el movimiento hacia atrás.
+alias checkleft "none"    // # Alias vacío utilizado para desactivar el movimiento hacia la izquierda.
+alias checkright "none"    // # Alias vacío utilizado para desactivar el movimiento hacia la derecha.
+alias none ""    // # Alias vacío que no realiza ninguna acción, usado como referencia para desactivar otros alias.
+```
+> Estos comandos están diseñados para mejorar el control del movimiento del personaje en el juego, asegurando que el movimiento se mantenga constante y fluido 
+> al cambiar de dirección, y desactivando el ruido del sonido para una experiencia de juego más clara.
+
+# Mejor Movimiento del mouse    
+```
+alias "MT0" "echo " - Seccion = [Movimiento] - "" 
+
+alias "MT1" "echo " [Sin] Movimiento (Mira Fija)""
+alias "MT2" "echo " [Con] Movimiento (Mira animada)""
+
+alias "Movimiento" "cln; spc; ALP0; ALP1; spc; MT0; spc; MT1; MT2; spc; ALP11; spc; ALP12; spc"
+
+alias "Sin" "cl_crosshair_dynamic 0; bind mouse1 +attack; echo --Cambios Aplicados!--"
+alias "Con" "bind mouse1 +shoot; echo --Cambios Aplicados!--"
+```
+> El código está diseñado para ajustar configuraciones de movimiento y de la mira en el juego, y para permitir cambios rápidos entre configuraciones mediante mensajes informativos.
+
+
 
