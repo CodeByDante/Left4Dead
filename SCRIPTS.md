@@ -37,7 +37,7 @@ bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los 
 ```
 bind "M" "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
 ```
-> Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocsr `voice_mute *Numero*` y silenciar a ese jugador ruidoso 
+> Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso 
 
 # Coordenadas en el mapa
 ```
