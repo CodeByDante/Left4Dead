@@ -151,5 +151,21 @@ alias "Con" "bind mouse1 +shoot; echo --Cambios Aplicados!--"
 ```
 > El código está diseñado para ajustar configuraciones de movimiento y de la mira en el juego, y para permitir cambios rápidos entre configuraciones mediante mensajes informativos.
 
+# modificación de lerp al instante 
+```
+alias interp0 "cl_interp 0.000; bind L interp1"
+alias interp1 "cl_interp 0.0167; bind L interp2"
+alias interp2 "cl_interp 0.0333; bind L interp3"
+alias interp3 "cl_interp 0.040; bind L interp4"
+alias interp4 "cl_interp 0.050; bind L interp5"
+alias interp5 "cl_interp 0.060; bind L interp6"
+alias interp6 "cl_interp 0.070; bind L interp7"
+alias interp7 "cl_interp 0.080; bind L interp8"
+alias interp8 "cl_interp 0.090; bind L interp9"
+alias interp9 "cl_interp 0.100; bind L interp0"
 
+bind "L" "interp0"
+```
+> este scripts hace que al ejecutar la tecla "L" los intervalos del comando 'cl_interp' suban
+> del 0.00 al 0.100 que es su valor predeterminado 
 
