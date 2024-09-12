@@ -26,12 +26,18 @@ bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
 ```
 > este es un script que se usa para aumentar/disminuir el brillo al maximo
 
-# bind status toggle 
+# bind status 
 
 ```
 bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los datos de la partida en tiempo real, como las personas que esta jugando, la ip del servidor entre otros
 ```
-> Este bind nos facilita al coloca aumaticamente "status en la consola, mostrandonos la ip/jugadores entre otros.
+> Con este Scripts podras podras ejecutar el comando `status` automáticamente en la consola y asi expulsar al jugador molesto con el comando `kick`
+
+# bind voice_show_mute
+```
+bind "M" "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
+```
+> Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocsr `voice_mute *Numero*` y silenciar a ese jugador ruidoso 
 
 # Coordenadas en el mapa
 ```
