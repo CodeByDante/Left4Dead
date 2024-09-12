@@ -167,5 +167,5 @@ alias interp9 "cl_interp 0.100; bind L interp0"
 bind "L" "interp0"
 ```
 > este scripts hace que al ejecutar la tecla "L" los intervalos del comando 'cl_interp' suban
-> del 0.00 al 0.100 que es su valor predeterminado 
+> del 0.00/0.016/0.033/0.040/0.050 hasta 0.100 que es su valor predeterminado 
 
