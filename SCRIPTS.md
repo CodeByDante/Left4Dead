@@ -230,7 +230,6 @@ alias interp9 "set_rates; cl_interp 0.100; bind L interp0"
 // # interp9: Fija cl_interp en 0.100 y vincula la tecla L de vuelta a interp0, creando un ciclo.
 
 bind "L" "interp0"
-// # Inicialmente, la tecla L está vinculada a interp0, que comienza el ciclo de cambios en cl_interp.
 ```
 > ### Este es un Script personal, es el mismo de arriba pero con más comandos ejecutandoce 
 > resumen: Cada vez que presionas la tecla L, se ajustan las tasas de red mediante set_rates y se cambia el valor de cl_interp en secuencia. El ciclo vuelve a empezar una vez que llegas a interp9.
