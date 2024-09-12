@@ -18,7 +18,7 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
    
    - Ejecuta como administrador el programa descargado.
    - Seleciona left 4 dead 2 .exe
-   - Este programa funciona con otros juegos solo tienes que saber que motor grafico usa, en este caso left4dead2 usa el `(DirectX 9)`
+   - Este programa funciona con otros juegos solo tienes que saber que motor grafico qué usa, en este caso left4dead2 usa el `(DirectX 9)`
    - solo le das clic a next
    - Nuevamente igual solo coloca next
    - Desmarca todas las casillas excepto la opción de `"Layer"`
@@ -49,7 +49,7 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
      C:\Program Files (x86)\Steam\steamapps\common\Left 4 Dead 2\reshade-shaders\Textures
      ```
      
-   - copia la mira seleccionada y reemplázala en la ruta correspondida . `recuerda cambiar el nombre del crosshair por el de Layer.pmg`
+   - copia la mira seleccionada y reemplázala en la ruta correspondida . `recuerda cambiar el nombre del crosshair por el de Layer.png`
    - Después de copiar la nueva mira en la carpeta adecuada, reemplaza el archivo correspondiente siguiendo las instrucciones.
      
 #  **6 Ajustar el tamaño de la mira**:
