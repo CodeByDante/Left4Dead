@@ -1,4 +1,5 @@
 # En esta sección encontrarás varios SCRIPTS útiles para el juego
+## Los SCRIPTS automatizan varias tareas con una sola tecla
 
 
 # Jump Rock             
