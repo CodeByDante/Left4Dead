@@ -6,7 +6,7 @@ Cuando nos conectamos a un servidor, nos comunicamos con él, y él con nosotros
 
 ```
 cl_cmdrate
-``` 
+```
 > // Controla cuántas actualizaciones de comando se envían del cliente al servidor por segundo.
 
 ```
