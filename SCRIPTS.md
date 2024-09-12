@@ -49,6 +49,10 @@ alias "vg7" "volume 0.7;echo  |_______*___| Volumen 70%;alias vgup vg8;alias vgd
 alias "vg8" "volume 0.8;echo  |________*__| Volumen 80%;alias vgup vg9;alias vgdn vg7"
 alias "vg9" "volume 0.9;echo  |_________*_| Volumen 90%;alias vgup vg10;alias vgdn vg8"
 alias "vg10" "volume 1;echo   |FF________*| Volumen 100% Maximo!;alias vgup vg1;alias vgdn vg9"
-alias "Volumen" "spc"
+alias "Volumen" "spc
+bind "UPARROW" "vgup"
+bind "DOWNARROW" "vgdn"
 ```
+
+> Lo que hace es crear una serie de alias para ajustar el volumen con las flechas de ↑ ↓
 > Esto nos permitirá Asignar las flechas arriba y abajo para controlar el volumen
