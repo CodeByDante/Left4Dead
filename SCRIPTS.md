@@ -17,7 +17,7 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 ¡Explora los scripts y optimiza tu experiencia de juego, teniendo en cuenta sus ventajas y desventajas!
 
 > [!NOTE]
-> Los scripts que veras ahora son comandos **basicos** que no son las gran cosa, son simples pero muy útiles 😉 
+> ## Los scripts que veras ahora son comandos **basicos** que no son las gran cosa, son simples pero muy útiles 😉 
 
 # Control de brillo
 ```
@@ -41,7 +41,7 @@ bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un te
 > este es un comando ordinario, no tiene nada especial solo te muestra la coordenadas donde estas muy util para hacer el hunter Ceiling, esta Bindeado a la tecla "P" para que lo quites cuando quieras
 
 > [!IMPORTANT]
-> Los siguientes Scripts son más complejos y en su mayoria se les puede considerar trampa ya que da un gran ayuda dentro del juego
+> ## Los siguientes Scripts son más complejos y en su mayoria se les puede considerar trampa ya que da un gran ayuda dentro del juego
 
 # Tecnicas automatizadas del tank
 
