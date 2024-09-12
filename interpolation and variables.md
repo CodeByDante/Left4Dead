@@ -4,6 +4,30 @@ Cuando hablamos de LERP nos estamos refiriendo a lo que comúnmente se llama int
 
 Cuando nos conectamos a un servidor, nos comunicamos con él, y él con nosotros, es decir, nos intercambiamos paquetes. En los paquetes que enviamos va toda nuestra información de jugador en ese preciso momento.Todos los jugadores envían esos paquetes al servidor para informarle de lo que están haciendo. El servidor los recibe y los interpreta para crear lo que se conoce como el estado actual REAL de la partida. Que para que me entendáis, es como una foto de lo que está ocurriendo en ese preciso momento. 
 
+```
+cl_cmdrate
+``` 
+> // Controla cuántas actualizaciones de comando se envían del cliente al servidor por segundo.
+
+```
+cl_updaterate
+```
+> // Define cuántas actualizaciones por segundo el cliente recibe del servidor.
+
+```
+cl_interp_ratio
+```
+> // Ajusta el factor de interpolación para suavizar la latencia entre el cliente y el servidor.
+
+```
+cl_interp
+```
+> // Establece el tiempo de interpolación entre las actualizaciones del servidor.
+
+```
+rate
+```
+> // Define la cantidad máxima de datos por segundo que el cliente puede recibir del servidor.
 
 ## Valores por defecto:
 `cl_cmdrate 100`
