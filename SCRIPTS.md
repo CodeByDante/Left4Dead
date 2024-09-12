@@ -1,6 +1,14 @@
-# En esta sección encontrarás varios SCRIPTS útiles para el juego
-## Los SCRIPTS automatizan varias tareas con una sola tecla
+# Scripts Útiles para el Juego
 
+## ¿Qué encontrarás aquí?
+En esta sección, podrás acceder a varios **scripts** que facilitan y automatizan distintas tareas dentro del juego. Estos scripts te permitirán ejecutar acciones complejas o repetitivas con solo presionar una tecla.
+
+### Ventajas
+- **Automatización:** Realiza múltiples acciones con un solo comando.
+- **Ahorro de tiempo:** Simplifica tareas repetitivas.
+- **Facilidad de uso:** Diseñados para ser intuitivos y fáciles de instalar.
+
+¡Explora los scripts y optimiza tu experiencia de juego!
 
 # Jump Rock             
 
