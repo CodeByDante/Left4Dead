@@ -9,12 +9,34 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 - **Facilidad de uso:** Diseñados para ser intuitivos y fáciles de instalar.
 
 ### Desventajas
-- **Tener ventaja sobre los demas jugadores** si usas estos scripts para creerte mejor que otros automáticamente eres kbro.
+- **Tener ventaja sobre los demas jugadores:** si usas estos scripts para creerte mejor que otros, automáticamente eres kbro.
 - **Posible desbalance:** Algunos scripts podrían afectar la experiencia de juego o crear una ventaja injusta.
 - **Dependencia:** Al automatizar demasiado, puedes perder habilidad manual o práctica en ciertas mecánicas del juego.
 - **Compatibilidad:** No todos los scripts funcionan en todas las configuraciones o servidores, lo que podría causar errores.
 
 ¡Explora los scripts y optimiza tu experiencia de juego, teniendo en cuenta sus ventajas y desventajas!
+
+# Control de brillo
+```
+bind "F7" "mat_monitorgamma_tv_enabled 0" // # Desactiva brillo maximo en el juego
+bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
+```
+> este es un script que se usa para aumentar/disminuir el brillo al maximo
+
+# bind status toggle 
+
+```
+bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los datos de la partida en tiempo real, como las personas que esta jugando, la ip del servidor entre otros
+```
+> Este bind nos facilita al coloca aumaticamente "status en la consola, mostrandonos la ip/jugadores entre otros.
+
+# Coordenadas en el mapa
+```
+cl_showpos 1 // # Muestra/Oculta las coordenadas en el mapa y la velocidad del jugador
+bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un tecla para activar/desactivar las coordenadas 
+```
+> este es un comando ordinario, no tiene nada especial solo te muestra la coordenadas donde estas muy util para hacer el hunter Ceiling, esta Bindeado a la tecla "P" para que lo quites cuando quieras
+
 # Jump Rock             
 
 ```
