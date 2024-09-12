@@ -56,3 +56,23 @@ bind "DOWNARROW" "vgdn"
 
 > Lo que hace es crear una serie de alias para ajustar el volumen con las flechas de ↑ ↓
 > Esto nos permitirá Asignar las flechas arriba y abajo para controlar el volumen
+
+# Configuración del ratón
+
+(Mejorar la precisión del puntero)
+
+```
+m_filter                        "0"       // # Elimina el retraso en la entrada del ratón
+m_filter2                       "0"       // # Elimina el retraso en la entrada del ratón
+m_customaccel                   "0"       // # Elimina la aceleración
+m_mouseaccel1                   "0"       // # Elimina la aceleración
+m_mouseaccel2                   "0"       // # Elimina la aceleración
+m_mousespeed                    "0"       // # Fuerza la aceleración del ratón en Windows
+m_customaccel_exponent          "0"       // # El movimiento del ratón se eleva a esta potencia antes de ser escalado por el factor de escala
+m_customaccel_max               "0"       // # Factor máximo de escala del movimiento del ratón, 0 para sin límite
+m_customaccel_scale             "0"       // # Valor de aceleración personalizada del ratón
+```
+> Estos comandos están configurados para eliminar cualquier forma de aceleración y suavizado del ratón, lo cual es esencial para una precisión óptima en juegos de alta competencia. 
+> La idea es proporcionar un control del ratón más predecible y directo, sin interferencias del sistema operativo o del juego
+
+
