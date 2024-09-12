@@ -76,8 +76,6 @@ rate
 `cl_interp_ratio 0`
 `cl_interp 0.0300` (va de 0.1000 - .0001)
 
-===============================================================================================================
-
 Los servidores de L4D2 pueden realizar esta operación de actualización un máximo de 30 veces por segundo  que es lo que se conoce como 30 TICK. Que por cierto, es un valor bastante bajo si lo comparamos con los 64 TICK que suelen tener los servidores de CSGO, o los 128 TICK que suelen tener los servidores competitivos de este mismo juego.
 
 Cuando el servidor crea esa, entre comillas, “fotografia” de la que estamos hablando, se la envía a los clientes (que somos nosotros los jugadores) para que se reproduzca en nuestras pantallas.
