@@ -6,8 +6,9 @@ para bajar la opacidad del crosshair del juego al minimo
 
 También puedes usar el comando `crosshair 0` para eliminar el crosshair pero este eliminara también la mira al usar la mele 
 
+
 <p>
-  <img src="https://raw.githubusercontent.com/SalvadorDante/Left4Dead/main/target.png" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/f3641548-449d-4a5c-8b05-0ff60245ae28" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
 
 
  #  **1. Descargar el programa**
