@@ -23,3 +23,15 @@ bind "TECLA ASIGNADA" "+haymaker"
 ```
 
 > Consta de un puñetazo/manazo e instantáneamente lanzar la roca.
+
+# Jump Hay Maker
+```
+alias +crouchjump "+jump; +duck; wait 10; -duck;"
+alias -crouchjump "-jump; wait 1; -duck;"
+alias +doubleattack "+attack2; wait 1; +attack;"
+alias -doubleattack "-attack2; wait 1; -attack;"
+alias +haymaker "+doubleattack; wait 3; +crouchjump;" 
+alias -haymaker "-doubleattack; wait 1; -crouchjump;"
+Bind "MOUSE5" "+haymaker"
+```
+> Este es una mezcla literal de la primera y segunda tecnica, es decir; saltar, dar un puñetazo y lanzarle la roca,esto puede ser de gran ayuda para ahorrar tiempo e impactar a enemigos cerca y lejos a la vez, todo de un golpe.
