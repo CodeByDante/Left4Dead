@@ -14,7 +14,7 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 
  #  **1. Descargar el programa**
 
- [![Descargar ReShade](https://img.shields.io/badge/Descargar%20ReShade-000000?style=flat&logo=download&logoColor=white&color=333333)](https://github.com/SalvadorDante/Left4Dead/releases/download/dead/ReShade_Setup_4.7.0.exe)
+ [![Descargar ReShade](https://img.shields.io/badge/Descargar%20ReShade-000000?style=flat&logo=download&logoColor=white&color=333333)](https://github.com/CodeByDante/Left4Dead/releases/download/reshade/ReShade_Setup_4.7.0.exe)
 
    **Instalar el programa**
    
