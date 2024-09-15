@@ -96,11 +96,6 @@ bind "TECLA ASIGNADA" "+haymaker"
 
 Este script permite realizar un **salto**, seguido de un **puñetazo** y lanzar una **roca** en una sola acción. Es útil para ahorrar tiempo e impactar a enemigos cercanos y lejanos de manera eficiente.
 
-## GIF de Demostración:
-![descarga](https://github.com/user-attachments/assets/11f192d4-2c9e-4a65-bda6-7f9e8c9c58f5)
-
-## Código del Script:
-
 ```bash
 alias +crouchjump "+jump; +duck; wait 10; -duck;"
 alias -crouchjump "-jump; wait 1; -duck;"
@@ -113,9 +108,9 @@ alias -haymaker "-doubleattack; wait 1; -crouchjump;"
 
 Bind "MOUSE5" "+haymaker"
 ```
-
-
-
+| Demostración:|
+| :---         |    
+| ![descarga](https://github.com/user-attachments/assets/11f192d4-2c9e-4a65-bda6-7f9e8c9c58f5)| 
 
 > Este es una mezcla literal de la primera y segunda tecnica, es decir; saltar, dar un puñetazo y lanzarle la roca,esto puede ser de gran ayuda para ahorrar tiempo e impactar a enemigos cerca y lejos a la vez, todo de un golpe.
 
