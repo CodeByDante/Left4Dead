@@ -20,13 +20,13 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 > ## Los scripts que veras ahora son comandos **basicos** que no son las gran cosa, son simples pero muy útiles 😉 
 
 # Aparece y desaparece los brazos/manos
-```
+```bash
 bind o "toggle fov_desired 90; toggle cl_viewmodelfovsurvivor 180 80"
 ```
 > Este bind funciona dos comandos para cuando ejecutemos la letra "o" apesca y desaparesca los brazos/manos.
 
 # Control de brillo
-```
+```bash
 bind "F7" "mat_monitorgamma_tv_enabled 0" // # Desactiva brillo maximo en el juego
 bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
 ```
@@ -34,19 +34,19 @@ bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
 
 # bind status 
 
-```
+```bash
 bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los datos de la partida en tiempo real, como las personas que esta jugando, la ip del servidor entre otros
 ```
 > Con este Scripts podras podras ejecutar el comando `status` automáticamente en la consola y asi expulsar al jugador molesto con el comando `kick`
 
 # bind voice_show_mute
-```
+```bash
 bind "M" "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
 ```
 > Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso
 
 # bind voice_mute 
-```
+```bash
 bind "F1" "voice_mute 1"    // # Mutea/Desmutea al jugador con ID 1 al presionar F1.
 bind "F2" "voice_mute 2"    // # Mutea/Desmutea al jugador con ID 2 al presionar F2.
 bind "F3" "voice_mute 3"    // # Mutea/Desmutea al jugador con ID 3 al presionar F3.
@@ -59,7 +59,7 @@ bind "F8" "voice_mute 8"    // # Mutea/Desmutea al jugador con ID 8 al presionar
 > Esta es la continuación del otro comando despues de ver el numero del jugador usando `voice_show_mute` usa estos bind para silenciarlo aun más rapido. `recomiendo cambiar los bind, esos binds son muy udandos`
 
 # Coordenadas en el mapa
-```
+```bash
 cl_showpos 1 // # Muestra/Oculta las coordenadas en el mapa y la velocidad del jugador
 bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un tecla para activar/desactivar las coordenadas 
 ```
@@ -72,7 +72,7 @@ bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un te
 
 # Jump Rock             
 
-```
+```bash
 alias +jumprock "SoundOn; +attack2; wait 3; +crouchjump; wait 20;"
 alias -jumprock "-attack2; wait 1; -crouchjump"
 bind "TECLA ASIGNADA" "+jumprock"
@@ -82,7 +82,7 @@ bind "TECLA ASIGNADA" "-jumprock"
 > Consiste en saltar y lanzar una roca en el aire inmediatamente. Puede utilizarse en terreno bajo como también saltando de lo mas alto
 
 # Hay Maker
-```
+```bash
 alias +haymaker "+doubleattack; wait 5; +jump"
 alias -haymaker "-jump; wait 1; -doubleattack"
 alias +doubleattack "+attack2; wait 1; +attack"
@@ -92,20 +92,35 @@ bind "TECLA ASIGNADA" "+haymaker"
 
 > Consta de un puñetazo/manazo e instantáneamente lanzar la roca.
 
-# Jump Hay Maker
-```
+# Jump Hay Maker Script
+
+Este script permite realizar un **salto**, seguido de un **puñetazo** y lanzar una **roca** en una sola acción. Es útil para ahorrar tiempo e impactar a enemigos cercanos y lejanos de manera eficiente.
+
+## GIF de Demostración:
+![descarga](https://github.com/user-attachments/assets/11f192d4-2c9e-4a65-bda6-7f9e8c9c58f5)
+
+## Código del Script:
+
+```bash
 alias +crouchjump "+jump; +duck; wait 10; -duck;"
 alias -crouchjump "-jump; wait 1; -duck;"
+
 alias +doubleattack "+attack2; wait 1; +attack;"
 alias -doubleattack "-attack2; wait 1; -attack;"
+
 alias +haymaker "+doubleattack; wait 3; +crouchjump;" 
 alias -haymaker "-doubleattack; wait 1; -crouchjump;"
+
 Bind "MOUSE5" "+haymaker"
 ```
+
+
+
+
 > Este es una mezcla literal de la primera y segunda tecnica, es decir; saltar, dar un puñetazo y lanzarle la roca,esto puede ser de gran ayuda para ahorrar tiempo e impactar a enemigos cerca y lejos a la vez, todo de un golpe.
 
 # Volumen
-```
+```bash
 alias "vgup" "vg1"
 alias "vgdn" "vg1"
 alias "vgmin" "volume 0;echo  |XX_________| Volumen 0% Muteado!;alias vgup vg1;alias vgdn vgmin"
@@ -129,7 +144,7 @@ bind "DOWNARROW" "vgdn"
 
 (Mejorar la precisión del puntero)
 
-```
+```bash
 m_filter                        "0"       // # Elimina el retraso en la entrada del ratón
 m_filter2                       "0"       // # Elimina el retraso en la entrada del ratón
 m_customaccel                   "0"       // # Elimina la aceleración
@@ -144,7 +159,7 @@ m_customaccel_scale             "0"       // # Valor de aceleración personaliza
 > La idea es proporcionar un control del ratón más predecible y directo, sin interferencias del sistema operativo o del juego
 
 # Mejor movimiento
-```
+```bash
 alias +mfwd "dsp_volume 0;-back;+forward;alias checkfwd +forward"    // # Activa el movimiento hacia adelante y desactiva el movimiento hacia atrás; establece el volumen del sonido a 0 y mantiene el movimiento hacia adelante activo mientras esté presionado.
 alias +mback "dsp_volume 0;-forward;+back;alias checkback +back"    // # Activa el movimiento hacia atrás y desactiva el movimiento hacia adelante; establece el volumen del sonido a 0 y mantiene el movimiento hacia atrás activo mientras esté presionado.
 alias +mleft "dsp_volume 0;-moveright;+moveleft;alias checkleft +moveleft"    // # Activa el movimiento hacia la izquierda y desactiva el movimiento hacia la derecha; establece el volumen del sonido a 0 y mantiene el movimiento hacia la izquierda activo mientras esté presionado.
@@ -163,7 +178,7 @@ alias none ""    // # Alias vacío que no realiza ninguna acción, usado como re
 > al cambiar de dirección, y desactivando el ruido del sonido para una experiencia de juego más clara.
 
 # Mejor Movimiento del mouse    
-```
+```bash
 alias "MT0" "echo " - Seccion = [Movimiento] - "" 
 
 alias "MT1" "echo " [Sin] Movimiento (Mira Fija)""
@@ -177,7 +192,7 @@ alias "Con" "bind mouse1 +shoot; echo --Cambios Aplicados!--"
 > El código está diseñado para ajustar configuraciones de movimiento y de la mira en el juego, y para permitir cambios rápidos entre configuraciones mediante mensajes informativos.
 
 # Modificación de lerp al instante 
-```
+```bash
 alias interp0 "cl_interp 0.000; bind L interp1"
 alias interp1 "cl_interp 0.0167; bind L interp2"
 alias interp2 "cl_interp 0.0333; bind L interp3"
@@ -196,7 +211,7 @@ bind "L" "interp0"
 
 # Interpolation and variables
 
-```
+```bash
 alias set_rates "cl_cmdrate 10; cl_updaterate 128; cl_interp_ratio 0; rate 128000"
 // # "set_rates" define varias configuraciones de red:
 // # cl_cmdrate 10 -> Limita la cantidad de comandos enviados al servidor a 10 veces por segundo.
