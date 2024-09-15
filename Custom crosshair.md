@@ -8,7 +8,8 @@ También puedes usar el comando `crosshair 0` para eliminar el crosshair pero es
 
 
 <p>
-  <img src="https://github.com/user-attachments/assets/f3641548-449d-4a5c-8b05-0ff60245ae28" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/559ba28f-ee28-48b4-af35-b12b9b04873c" alt="Descripción de la imagen" width="200" style="float: left; margin-right: 10px;" />
+
 
 
  #  **1. Descargar el programa**
