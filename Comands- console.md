@@ -15,24 +15,6 @@ Bind f10 "toggleconsole"
  > Abre la consola desde la tecla asignada (F10)
 
 
-
-```
-Net_Graph 1
-``` 
-> Muestra estadísticas como FPS y latencia en pantalla.
-
-```
-Bind f11 "disconnect"
-```
-> Desconéctate rápidamente de un servidor con (F11).
-
-```
-sv_consistency 0
-```
-
-> [!IMPORTANT]\
-> _Siempre escribe este comando `sv_consistency 0`en la consola o un archivo autoexec.cfg para evitar que los jugadores sean expulsados por el uso de mods en servidor local. *esta incluido en el autoexec.cfg para que se ejecuque al iniciar el juego*_
-
 ## Configuración mejorada para (parametros del juegos)
 
 Estos comandos ayudaran a mejorar y optimizar 
@@ -75,7 +57,25 @@ factores en el juego
 `-threads`: Especifica el número de hilos de procesamiento que el juego utilizará.
 
 
-## Comandos Útiles para la partida📓
+## Comandos Útiles para la partida 
+
+```
+Net_Graph 1
+``` 
+> Muestra estadísticas como FPS y latencia en pantalla.
+
+```
+Bind f11 "disconnect"
+```
+> Desconéctate rápidamente de un servidor con (F11).
+
+```
+sv_consistency 0
+```
+
+> [!IMPORTANT]\
+> _Siempre escribe este comando `sv_consistency 0`en la consola o un archivo autoexec.cfg para evitar que los jugadores sean expulsados por el uso de mods en servidor local. *esta incluido en el autoexec.cfg para que se ejecuque al iniciar el juego*_
+
 
 `status` _se usa en la consola para mostrar información sobre los jugadores conectados al servidor, como sus IDs, nombres y direcciones IP._
 
