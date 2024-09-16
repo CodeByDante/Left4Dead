@@ -6,3 +6,4 @@ Esta guía busca ayudar y optimizar el juego para que tengas una mejor experienc
 | **Guia left4dead2**    | **Descripción**     |
 |-----------------|------------------|
 | [**comandos básicos para el juego**](https://github.com/CodeByDante/Left4Dead/blob/8fb4efed402e1483a820ef6699e715ff8cf43162/Comands-%20console.md)  | Aqui encontraras los comandos basicos que necesitas conocer. |
+| [**comandos Activar la consola**](https://github.com/CodeByDante/Left4Dead/blob/main/Comands-%20console.md#como-activar-la-consola-en-el-juego)  | cómo activarla consola para tener una mejor experienciaeneljuego|
