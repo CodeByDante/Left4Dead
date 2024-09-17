@@ -45,10 +45,7 @@ cl_showpos 1
 sv_pure 0
 ```
 > Desactiva las restricciones de archivos puros del servidor, permitiendo contenido personalizado (mods, etc.).
-```
-sb_all_bot_game 1
-```
-> Permite jugar una partida con solo bots, sin necesidad de otros jugadores humanos.
+
 ```
 net_graphpos 1
 ```
