@@ -35,25 +35,25 @@ bind "c" "+right" ceiling jump del hunter -->
 ```bash
 bind o "toggle fov_desired 90; toggle cl_viewmodelfovsurvivor 180 80"
 ```
-> Este bind funciona dos comandos para cuando ejecutemos la letra "o" apesca y desaparesca los brazos/manos.
+> Este bind combina dos comandos para que, al presionar la letra "O", los brazos/manos aparezcan y desaparezcan alternadamente.
 
 ## Control de brillo
 ```bash
 bind "F7" "mat_monitorgamma_tv_enabled 0" // # Desactiva brillo maximo en el juego
 bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
 ```
-> este es un script que se usa para aumentar/disminuir el brillo al maximo
+> Este es un script que se utiliza para ajustar el brillo al máximo o mínimo, permitiendo aumentar o disminuir la luminosidad en el juego de manera rápida.
 
 ## bind status 
 
 ```bash
 bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los datos de la partida en tiempo real, como las personas que esta jugando, la ip del servidor entre otros
 ```
-> Con este Scripts podras podras ejecutar el comando `status` automáticamente en la consola y asi expulsar al jugador molesto con el comando `kick`
+> Con este script, podrás ejecutar automáticamente el comando `status` en la consola, lo que te permitirá identificar y expulsar fácilmente a un jugador molesto usando el comando `kick`.
 
 ## bind voice_show_mute
 ```bash
-bind "M" "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
+bind "." "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
 ```
 > Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso
 
@@ -75,7 +75,7 @@ bind "F8" "voice_mute 8"    // # Mutea/Desmutea al jugador con ID 8 al presionar
 cl_showpos 1 // # Muestra/Oculta las coordenadas en el mapa y la velocidad del jugador
 bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un tecla para activar/desactivar las coordenadas 
 ```
-> este es un comando ordinario, no tiene nada especial solo te muestra la coordenadas donde estas muy util para hacer el hunter Ceiling, esta Bindeado a la tecla "P" para que lo quites cuando quieras
+> Este es un comando ordinario, no tiene nada especial solo te muestra la coordenadas donde estas muy util para hacer el hunter Ceiling, esta Bindeado a la tecla "P" para que lo quites cuando quieras
 
 # Scripts avanced
 
