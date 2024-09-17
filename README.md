@@ -4,7 +4,6 @@ Esta guía busca ayudar y optimizar el juego para que tengas una mejor experienc
 
 | **Guía Left 4 Dead 2**      | **Descripción**     |
 |-----------------------------|---------------------|
-| [**Comandos Básicos del Juego**](https://github.com/CodeByDante/Left4Dead/blob/8fb4efed402e1483a820ef6699e715ff8cf43162/Comands-%20console.md)  | Comandos esenciales que debes conocer para optimizar tu experiencia de juego. |
 | [**Activación de la Consola**](https://github.com/CodeByDante/Left4Dead/blob/main/Comands-%20console.md#como-activar-la-consola-en-el-juego)  | Pasos para activar la consola y acceder a funciones avanzadas del juego. |
 | [**Optimización del Rendimiento**](https://github.com/CodeByDante/Left4Dead/blob/main/Comands-%20console.md#configuraci%C3%B3n-mejorada-para-parametros-del-juegos)  | Consejos para ajustar los parámetros del juego y mejorar su rendimiento. |
 | [**Comandos Útiles Durante la Partida**](https://github.com/CodeByDante/Left4Dead/blob/main/Comands-%20console.md#comandos-%C3%BAtiles-para-la-partida)  | Comandos adicionales para mejorar la experiencia de juego en tus partidas. |
