@@ -4,6 +4,10 @@
 Net_Graph 1
 ``` 
 > Muestra estadísticas como FPS y latencia en pantalla.
+```
+cl_showpos 1 
+```
+> Muestra/Oculta las coordenadas en el mapa y la velocidad del jugador
 
 ```
 Bind f11 "disconnect"
