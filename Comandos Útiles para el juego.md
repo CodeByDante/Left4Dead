@@ -1,5 +1,13 @@
 ## Comandos Útiles para la partida 
 
+```
+Bind f10 "toggleconsole"
+```
+> activa la consola con (F10
+```
+sv_cheats 1
+```
+> Activa los trucos en el juego, permitiendo comandos de consola que normalmente estarían deshabilitados.
 
 ```
 Bind f11 "disconnect"
@@ -14,25 +22,17 @@ sv_consistency 0
 > [!IMPORTANT]\
 > _Siempre escribe este comando `sv_consistency 0`en la consola o un archivo autoexec.cfg para evitar que los jugadores sean expulsados por el uso de mods en servidor local. *esta incluido en el autoexec.cfg para que se ejecuque al iniciar el juego*_
 
-
-```
-kick <nombre del jugador>
-``` 
-> _se usa para expulsar a un jugador de tu servidor local_
-
 ```
 status
 ```
 > _se usa en la consola para mostrar información sobre los jugadores conectados al servidor, como sus IDs, nombres y direcciones IP._
 
 ```
-bind "<tecla>" "openserverbrowser"
-```
-> Asigna una tecla para abrir el navegador de servidores, lo que te permite buscar servidores disponibles.
-```
-bind "<tecla>" "lastinv"
-```
-> Asigna una tecla para cambiar al último arma usada, facilitando un cambio rápido entre armas.
+kick <nombre del jugador>
+``` 
+> _se usa para expulsar a un jugador de tu servidor local_
+---
+
 ```
 Net_Graph 1
 ``` 
@@ -54,10 +54,6 @@ net_graphpos 1
 ```
 > Posiciona el gráfico de red en la parte inferior derecha de la pantalla.
 ```
-sv_cheats 1
-```
-> Activa los trucos en el juego, permitiendo comandos de consola que normalmente estarían deshabilitados.
-```
 mat_monitorgamma_tv_enabled 1
 ```
 > Habilita el ajuste de gamma (brillo) en pantallas de TV.
@@ -73,8 +69,16 @@ net_graphheight 120
 ```
 setinfo name <nombre del jugador>
 ``` 
-
 > _cambiar el nombre dentro de la partida_
+```
+bind "<tecla>" "openserverbrowser"
+```
+> Asigna una tecla para abrir el navegador de servidores, lo que te permite buscar servidores disponibles.
+```
+bind "<tecla>" "lastinv"
+```
+> Asigna una tecla para cambiar al último arma usada, facilitando un cambio rápido entre armas.
+```
 
 > [!NOTE]\
 > Estos dos comandos sirven para comentar de manera rapida dentro del juego
@@ -91,65 +95,61 @@ bind <letra asignada> say "!ready"
 > _envia un mensaje para todo el chat global_
 
 
-# commands - mensajes bindeados que te pueden ser util
 
 ---
+# commands - mensajes bindeados que te pueden ser util
 
-
+```
 bind "g" "say_team Go Go"
-
-
+```
+```
 bind "j" "say_team !tank tank"
-
-
+```
+```
 bind "i" "say_team #Back #Atras"
-
-
+```
+```
 bind "h" "say_team Yo voy Primero (I go first)"
-
-
+```
 bind "l" "say_team No se junten (don't get together)"
 
-
+```
 bind "k" "say_team Help Me (Ayuda)"
-
+```
 
 bind "7" "say_team cubrir respawn / Kill Commons"
-
+```
 
 bind "p" "say_team !ready"
-
+```
 
 bind "8" "say_team Witch Witch!"
-
+```
 
 bind "o" "say_team Tengan Cuidado (careful)"
 
-
+```
 bind "0" "say_team Esperen (wait)"
-
+```
 
 bind "9" "say_team Hit / Push"
 
-
+```
 Bind "-" "say_team Por aqui (Here)"
 
-
+```
 bind "." "say_team Ultima vida (last life)"
-
-
+```
+```
 bind "," "say_team Todos juntos (together)"
-
-
+```
+```
 bind "F4" "say_team Que pierda vision / Loss"
 
-
+```
 bind "F5" "say_team Pocas Balas / No Ammo"
-
-
+```
 bind "F6" "say_team !unready"
-
-
+```
 bind "F7" "say_team !pause"
-
-
+```
