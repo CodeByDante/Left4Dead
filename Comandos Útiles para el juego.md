@@ -53,5 +53,127 @@ bind <letra asignada> say "!ready"
 > _envia un mensaje para todo el chat global_
 
 
+//Commands - Comandos de consola y mensajes bindeados
+
+
+
+
+bind "g" "say_team Go Go"
+
+
+bind "j" "say_team !tank tank"
+
+
+bind "i" "say_team #Back #Atras"
+
+
+bind "h" "say_team Yo voy Primero (I go first)"
+
+
+bind "l" "say_team No se junten (don't get together)"
+
+
+bind "k" "say_team Help Me (Ayuda)"
+
+
+bind "7" "say_team cubrir respawn / Kill Commons"
+
+
+bind "p" "say_team !ready"
+
+
+bind "8" "say_team Witch Witch!"
+
+
+bind "o" "say_team Tengan Cuidado (careful)"
+
+
+bind "0" "say_team Esperen (wait)"
+
+
+bind "9" "say_team Hit / Push"
+
+
+Bind "-" "say_team Por aqui (Here)"
+
+
+bind "." "say_team Ultima vida (last life)"
+
+
+bind "," "say_team Todos juntos (together)"
+
+
+bind "F4" "say_team Que pierda vision / Loss"
+
+
+bind "F5" "say_team Pocas Balas / No Ammo"
+
+
+bind "F6" "say_team !unready"
+
+
+bind "F7" "say_team !pause"
+
+
+bind"F10""toggleconsole"
+
+
+bind"F11""disconnect"
+
+
+bind"F9""openserverbrowser"
+
+
+bind "q" "lastinv"
+
+
+bind "v" "!current"
+
+
+bind "b" "+right"
+
+
+cl_crosshair_dynamic 0
+
+
+cl_crosshair_thickness 3
+
+
+sv_consistency 0
+
+
+sv_pure 0
+
+
+sb_all_bot_game 1
+
+
+cl_viewmodelfovsurvivor 80
+
+
+cl_showpos 1
+
+
+cl_showfps 1
+
+
+net_graph 1
+
+
+net_graphpos 1
+
+
+sv_cheats 1
+
+
+mat_monitorgamma_tv_enabled 1
+
+net_graphproportionalfont 1
+
+net_graphheight 120
+
+
+
+
 
 
