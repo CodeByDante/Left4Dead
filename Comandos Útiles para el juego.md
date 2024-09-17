@@ -78,7 +78,7 @@ bind "<tecla>" "openserverbrowser"
 bind "<tecla>" "lastinv"
 ```
 > Asigna una tecla para cambiar al último arma usada, facilitando un cambio rápido entre armas.
-```
+
 
 > [!NOTE]\
 > Estos dos comandos sirven para comentar de manera rapida dentro del juego
@@ -111,32 +111,33 @@ bind "i" "say_team #Back #Atras"
 ```
 bind "h" "say_team Yo voy Primero (I go first)"
 ```
+```
 bind "l" "say_team No se junten (don't get together)"
-
+```
 ```
 bind "k" "say_team Help Me (Ayuda)"
 ```
-
+```
 bind "7" "say_team cubrir respawn / Kill Commons"
 ```
-
+```
 bind "p" "say_team !ready"
 ```
-
+```
 bind "8" "say_team Witch Witch!"
 ```
-
+```
 bind "o" "say_team Tengan Cuidado (careful)"
-
+```
 ```
 bind "0" "say_team Esperen (wait)"
 ```
-
+```
 bind "9" "say_team Hit / Push"
-
+```
 ```
 Bind "-" "say_team Por aqui (Here)"
-
+```
 ```
 bind "." "say_team Ultima vida (last life)"
 ```
@@ -145,11 +146,13 @@ bind "," "say_team Todos juntos (together)"
 ```
 ```
 bind "F4" "say_team Que pierda vision / Loss"
-
+```
 ```
 bind "F5" "say_team Pocas Balas / No Ammo"
 ```
+```
 bind "F6" "say_team !unready"
+```
 ```
 bind "F7" "say_team !pause"
 ```
