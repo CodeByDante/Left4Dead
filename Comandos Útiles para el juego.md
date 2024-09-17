@@ -34,6 +34,9 @@ setinfo name <nombre del jugador>
 
 > _cambiar el nombre dentro de la partida_
 
+> [!NOTE]\
+> Estos dos comandos sirven para comentar de manera rapida dentro del juego
+
 ```
 bind <letra asignada> say_team "TANK GO BACK!"
 ``` 
