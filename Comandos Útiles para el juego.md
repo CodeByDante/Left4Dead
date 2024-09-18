@@ -96,6 +96,9 @@ bind <letra asignada> say "!ready"
 ---
 # commands - mensajes bindeados que te pueden ser util
 
+<details>
+<summary>mensajes bindeados</summary>
+  
 ```
 bind "g" "say_team Go Go"
 ```
@@ -153,3 +156,4 @@ bind "F6" "say_team !unready"
 ```
 bind "F7" "say_team !pause"
 ```
+</details>
