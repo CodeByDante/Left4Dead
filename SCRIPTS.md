@@ -248,6 +248,10 @@ sv_mincmdrate                   "67"      // Tasa mínima de comandos
 sv_maxcmdrate                   "101"     // Tasa máxima de comandos
 sv_maxrate                      "100000"  // Tasa máxima de red
 ```
+> Este comando optimiza el rendimiento del juego al desactivar ayudas y efectos gráficos, reducir la carga de texturas, y ajustar configuraciones de red para mejorar los FPS y reducir el lag de entrada.
+
+
+
 ## Mejor Movimiento del mouse    
 ```bash
 alias "MT0" "echo " - Seccion = [Movimiento] - "" 
