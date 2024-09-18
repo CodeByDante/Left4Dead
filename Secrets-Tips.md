@@ -24,6 +24,8 @@
    ```
 Esto mostrará la información del servidor y de los jugadores, incluyendo el # del bot (userid) que deseas expulsar.
 
+![image](https://github.com/user-attachments/assets/ac75f82e-0fad-4d5a-8fb2-3c67f644196d)
+
 3. Para expulsar al bot, ingresa en la consola el siguiente comando:
 
 ```bash
