@@ -185,6 +185,69 @@ alias none ""    // # Alias vacío que no realiza ninguna acción, usado como re
 > Estos comandos están diseñados para mejorar el control del movimiento del personaje en el juego, asegurando que el movimiento se mantenga constante y fluido 
 > al cambiar de dirección, y desactivando el ruido del sonido para una experiencia de juego más clara.
 
+## FPS BOOSTER-LAG |0 IMPUT LAG|
+
+### Desactivación de ayudas y subtítulos
+
+```bash
+cl_autohelp                     "0"       // Desactiva la auto ayuda
+cl_showhelp                     "0"       // Desactiva la ayuda del juego
+cc_subtitles                    "0"       // No subtítulos
+c_thirdpersonshoulder           "0"       // Bloquea la vista en tercera persona
+
+// Gestión de cuerpos y efectos
+cl_ragdoll_limit                "0"       // Remueve cuerpos de zombis muertos
+cl_forcepreload                 "1"       // Precarga los niveles en la RAM
+cl_detail_max_sway              "0"       // Amplitud del balanceo del puntal de detalle
+cl_lagcompensation              "1"       // Compensación de lag activada
+cl_clearhinthistory             "1"       // Limpia el historial de indicios
+
+// Configuración de gráficos
+r_dynamic                       "0"       // Deshabilita las sombras dinámicas
+r_PhysPropStaticLighting        "0"       // Iluminación más rápida en objetos físicos
+r_ambientfraction               "0.2"     // Ajuste de fracción de iluminación directa
+r_cheapwaterend                 "1"       // Peor rendimiento de agua
+r_cheapwaterstart               "1"       // Peor rendimiento de agua 2
+r_skyboxfogfactor               "1"       // Skybox empaña
+r_eyemove                       "0"       // Desactiva el movimiento de los ojos
+r_eyeshift_z                    "0"       // Desactiva el movimiento de los ojos (eje Z)
+r_eyeshift_y                    "0"       // Desactiva el movimiento de los ojos (eje Y)
+r_eyeshift_x                    "0"       // Desactiva el movimiento de los ojos (eje X)
+r_shadowfromanyworldlight       "0"       // Desactiva sombras de luces del mundo
+
+// Ajustes de textura y brillo
+mat_bloom_scalefactor_scalar    "0"       // Desactiva la escala de floración
+mat_grain_scale_override        "0"       // Desactiva el granulado de película
+mat_viewportscale               "1"       // Ajusta la escala del viewport
+mat_hdr_enabled                 "0"       // Desactiva el HDR
+mat_queue_mode                  "2"       // Configura el modo de cola de materiales
+mat_monitorgamma                 "1.6"    // Aumenta el brillo del monitor
+mat_monitorgamma_tv_enabled      "1.6"    // Aumenta el brillo del monitor (TV)
+
+fog_enable                      "0"       // Desactiva la niebla
+fog_enable_water_fog            "0"       // Desactiva la niebla de agua
+fps_max                         "0"       // Sin límite de FPS
+
+// Otros ajustes
+func_break_max_pieces           "0"       // Reduce los escombros
+gameinstructor_enable           "0"       // Desactiva el instructor de juego
+muzzleflash_light               "1"       // Para eliminar el destello del disparo
+z_wound_client_disabled         "1"       // Desactiva el efecto de mutilación de zombis
+z_increment_lower               "1"       // Ajusta el incremento de zombis
+z_decals                        "1"       // Mantiene los decals (marcas) de los disparos
+
+// Configuración de red
+sv_consistency                  "0"       // Desactiva la consistencia del servidor
+sv_cheats                       "1"       // Habilita trucos (para pruebas)
+sv_lan                          "0"       // Desactiva el modo LAN
+spec_allowroaming               "1"       // Permite roaming de espectadores
+con_enable                      "1"       // Habilita la consola
+mp_disable_autokick             "1"       // Desactiva el auto kick en el modo de juego
+sv_minrate                      "25000"   // Tasa mínima de red
+sv_mincmdrate                   "67"      // Tasa mínima de comandos
+sv_maxcmdrate                   "101"     // Tasa máxima de comandos
+sv_maxrate                      "100000"  // Tasa máxima de red
+```
 ## Mejor Movimiento del mouse    
 ```bash
 alias "MT0" "echo " - Seccion = [Movimiento] - "" 
@@ -198,6 +261,7 @@ alias "Sin" "cl_crosshair_dynamic 0; bind mouse1 +attack; echo --Cambios Aplicad
 alias "Con" "bind mouse1 +shoot; echo --Cambios Aplicados!--"
 ```
 > El código está diseñado para ajustar configuraciones de movimiento y de la mira en el juego, y para permitir cambios rápidos entre configuraciones mediante mensajes informativos.
+
 
 ## Modificación de lerp al instante 
 ```bash
