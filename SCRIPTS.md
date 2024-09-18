@@ -79,6 +79,9 @@ bind "." "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # m
 </details>
 
 ## bind voice_mute 
+<details>
+<summary>bind voice_mute </summary>
+  
 ```bash
 bind "F1" "voice_mute 1"    // # Mutea/Desmutea al jugador con ID 1 al presionar F1.
 bind "F2" "voice_mute 2"    // # Mutea/Desmutea al jugador con ID 2 al presionar F2.
@@ -90,13 +93,18 @@ bind "F7" "voice_mute 7"    // # Mutea/Desmutea al jugador con ID 7 al presionar
 bind "F8" "voice_mute 8"    // # Mutea/Desmutea al jugador con ID 8 al presionar F8.
 ```
 > Esta es la continuación del otro comando despues de ver el numero del jugador usando `voice_show_mute` usa estos bind para silenciarlo aun más rapido. `recomiendo cambiar los bind, esos binds son muy udandos`
+</details>
 
 ## Coordenadas en el mapa
+<details>
+<summary>Coordenadas en el mapa</summary>
+  
 ```bash
 cl_showpos 1 // # Muestra/Oculta las coordenadas en el mapa y la velocidad del jugador
 bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un tecla para activar/desactivar las coordenadas 
 ```
 > Este es un comando ordinario, no tiene nada especial solo te muestra la coordenadas donde estas muy util para hacer el hunter Ceiling, esta Bindeado a la tecla "P" para que lo quites cuando quieras
+</details>
 
 # Scripts avanced
 
@@ -105,7 +113,10 @@ bind P "toggle cl_showpos 1 0" // # Este es el mismo comando pero bindeado un te
 
 # Tecnicas automatizadas del tank
 
-## Jump Rock             
+## Jump Rock
+<details>
+<summary>Jump Rock</summary>
+  
 
 ```bash
 alias +jumprock "SoundOn; +attack2; wait 3; +crouchjump; wait 20;"
@@ -115,8 +126,12 @@ bind "TECLA ASIGNADA" "-jumprock"
 ```
 
 > Consiste en saltar y lanzar una roca en el aire inmediatamente. Puede utilizarse en terreno bajo como también saltando de lo mas alto
+</details>
 
 ## Hay Maker
+<details>
+<summary>Hay Maker</summary>
+  
 ```bash
 alias +haymaker "+doubleattack; wait 5; +jump"
 alias -haymaker "-jump; wait 1; -doubleattack"
@@ -126,8 +141,13 @@ bind "TECLA ASIGNADA" "+haymaker"
 ```
 
 > Consta de un puñetazo/manazo e instantáneamente lanzar la roca.
+</details>
 
-## Jump Hay Maker Script
+## Jump Hay Maker 
+
+<details>
+<summary>Jump Hay Maker</summary>
+  
 
 Este script permite realizar un **salto**, seguido de un **puñetazo** y lanzar una **roca** en una sola acción. Es útil para ahorrar tiempo e impactar a enemigos cercanos y lejanos de manera eficiente.
 
@@ -147,6 +167,7 @@ alias -haymaker "-doubleattack; wait 1; -crouchjump;"
 Bind "MOUSE5" "+haymaker"
 ```
 > Este es una mezcla literal de la primera y segunda tecnica, es decir; saltar, dar un puñetazo y lanzarle la roca,esto puede ser de gran ayuda para ahorrar tiempo e impactar a enemigos cerca y lejos a la vez, todo de un golpe.
+</details>
 
 ## Volumen
 ```bash
