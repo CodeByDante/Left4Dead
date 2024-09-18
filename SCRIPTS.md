@@ -22,20 +22,29 @@ En esta sección, podrás acceder a varios **scripts** que facilitan y automatiz
 > ## Los scripts que veras ahora son comandos **basicos** que no son las gran cosa, son simples pero muy útiles 😉 
 
 ## Hunter Ceiling Jump 
-
+<details>
+<summary>Hunter Ceiling Jump</summary>
+  
 ```bash
 bind "x" "+left" ceiling jump del hunter  <--
 bind "c" "+right" ceiling jump del hunter -->
 ```
 > Permite realizar el Hunter Ceiling Jump en Left 4 Dead, una técnica avanzada para saltar y moverse por los techos con el Hunter. Asigna las teclas "X" y "C" para girar rápidamente a la izquierda y derecha, lo que ayuda a controlar mejor los saltos en techos o superficies, mejorando la movilidad del Hunter.
-
+</details>
 
 
 ## Aparece y desaparece los brazos/manos
+
+<details>
+<summary> Aparece y desaparece los brazos/manos 
+</summary>
+  
 ```bash
 bind o "toggle fov_desired 90; toggle cl_viewmodelfovsurvivor 180 80"
 ```
 > Este bind combina dos comandos para que, al presionar la letra "O", los brazos/manos aparezcan y desaparezcan alternadamente.
+
+</details>
 
 ## Control de brillo
 ```bash
