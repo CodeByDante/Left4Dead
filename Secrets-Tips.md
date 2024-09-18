@@ -1,4 +1,10 @@
 # Left 4 Dead 2
+En esta sección encontrarás tips y secretos del juego
+
+<details>
+<summary>Como Expular bot de la partida</summary>
+
+---
 
 **Categoría:** Secrets  
 **Idiomas:** Español  
@@ -49,3 +55,4 @@ No utilices este método para obtener ventajas injustas. Valve podría eliminar 
 Un agradecimiento especial a [este perfil de Steam](https://steamcommunity.com/profiles/76561198074588088) por su contribución.
 
 [Visitar perfil](https://steamcommunity.com/profiles/76561198074588088)
+</details>
