@@ -170,6 +170,9 @@ Bind "MOUSE5" "+haymaker"
 </details>
 
 ## Volumen
+<details>
+<summary>Volumen</summary>
+  
 ```bash
 alias "vgup" "vg1"
 alias "vgdn" "vg1"
@@ -189,9 +192,13 @@ bind "DOWNARROW" "vgdn"
 
 > Lo que hace es crear una serie de alias para ajustar el volumen con las flechas de ↑ ↓
 > Esto nos permitirá Asignar las flechas arriba y abajo para controlar el volumen
+</details>
 
 ## Configuración del ratón
-
+<details>
+<summary>Configuración del ratón
+</summary>
+  
 (Mejorar la precisión del puntero)
 
 ```bash
@@ -207,6 +214,7 @@ m_customaccel_scale             "0"       // # Valor de aceleración personaliza
 ```
 > Estos comandos están configurados para eliminar cualquier forma de aceleración y suavizado del ratón, lo cual es esencial para una precisión óptima en juegos de alta competencia. 
 > La idea es proporcionar un control del ratón más predecible y directo, sin interferencias del sistema operativo o del juego
+</details>
 
 ## Mejor movimiento
 ```bash
