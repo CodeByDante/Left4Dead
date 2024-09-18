@@ -47,24 +47,36 @@ bind o "toggle fov_desired 90; toggle cl_viewmodelfovsurvivor 180 80"
 </details>
 
 ## Control de brillo
+<details>
+<summary>Control de brillo</summary>
+  
 ```bash
 bind "F7" "mat_monitorgamma_tv_enabled 0" // # Desactiva brillo maximo en el juego
 bind "F6" "mat_monitorgamma_tv_enabled 1" // # Activa brillo maximo en el juego.
 ```
 > Este es un script que se utiliza para ajustar el brillo al máximo o mínimo, permitiendo aumentar o disminuir la luminosidad en el juego de manera rápida.
+</details>
 
 ## bind status 
-
+<details>
+<summary>bind status </summary>
+  
 ```bash
 bind "-" "toggleconsole; clear; status; play ui/beepclear.wav" // # Muestra los datos de la partida en tiempo real, como las personas que esta jugando, la ip del servidor entre otros
 ```
 > Con este script, podrás ejecutar automáticamente el comando `status` en la consola, lo que te permitirá identificar y expulsar fácilmente a un jugador molesto usando el comando `kick`.
+</details>
 
 ## bind voice_show_mute
+
+<details>
+<summary>bind voice_show_mute</summary>
+  
 ```bash
 bind "." "toggleconsole; clear; voice_show_mute 1; play ui/beepclear.wav" // # muentra el numero de orden de los jugadores y sus nombres esto nos servira para silenciar cuando usan el slam para hacer ruido y molestar 
 ```
 > Con este script podras ejecutar el comando `voice_show_mute` automáticamente para despues colocar `voice_mute *Numero*` y silenciar a ese jugador ruidoso
+</details>
 
 ## bind voice_mute 
 ```bash
