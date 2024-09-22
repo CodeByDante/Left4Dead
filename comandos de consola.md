@@ -1,4 +1,14 @@
-TODOS LOS COMANDOS DEL JUEGO 
+# Lista de comandos y variables de consola de Left 4 Dead 2
+
+La siguiente es una lista de comandos y variables de consola de *Left 4 Dead 2*, ordenados alfabéticamente.
+
+### Consideraciones:
+- Esta lista no incluye todos los comandos de consola. Por ejemplo: `jointeam <equipo|número de equipo|personaje>`.
+- Algunos comandos son heredados o ya no están vinculados al código del juego.
+- Algunos comandos de L4D2 requieren el modo desarrollador activado (usando la opción de lanzamiento `-dev`) para funcionar correctamente.
+- Los convars con el prefijo `360solo` solo se aplican en Xbox 360.
+
+
 
 | Comando                | Tipo/Valor Preterminado  | Parámetros          | Descripción                                                                            |
 |------------------------|-------|---------------------|----------------------------------------------------------------------------------------|
