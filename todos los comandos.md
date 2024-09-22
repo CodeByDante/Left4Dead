@@ -1,6 +1,6 @@
 TODOS LOS COMANDOS DEL JUEGO 
 
-| Comando                | Tipo  | Parámetros          | Descripción                                                                            |
+| Comando                | Valor Preterminado  | Parámetros          | Descripción                                                                            |
 |------------------------|-------|---------------------|----------------------------------------------------------------------------------------|
 | `_autosave`             | cmd   | N/A                 | Activa el guardado automático del juego.                                                |
 | `_autosavedangerous`    | cmd   | N/A                 | Guardado automático en situaciones peligrosas, puede causar inestabilidad.              |
@@ -13,7 +13,7 @@ TODOS LOS COMANDOS DEL JUEGO
 A
 
 
-| Comando                                | Tipo  | Parámetros                      | Descripción                                                                                               |
+| Comando                                | Valor Preterminado| Parámetros                      | Descripción                                                                                               |
 |----------------------------------------|-------|---------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `achievement_debug`                    | 0     | cheat, rep, cl                  | Activa los mensajes de depuración de logros.                                                               |
 | `achievement_disable`                  | 0     | cheat, rep, cl                  | Desactiva los logros.                                                                                      |
@@ -56,7 +56,7 @@ A
 B
 
 
-| Comando                                        | Tipo        | Parámetros              | Descripción                                                                                              |
+| Comando                                        | Valor Preterminado     | Parámetros              | Descripción                                                                                              |
 |------------------------------------------------|-------------|-------------------------|----------------------------------------------------------------------------------------------------------|
 | `+back`                                        | cmd         | cl                      | Hacer que el personaje retroceda.                                                                         |
 | `-back`                                        | cmd         | cl                      | Hacer que el personaje deje de retroceder.                                                                |
