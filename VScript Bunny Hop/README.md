@@ -1,39 +1,47 @@
-# Server-side Auto Bunnyhop for Left 4 Dead 2
-This plugin works both on server and client (to remove shaky and laggy effect when you bunnyhop) side, but it requires a server (listen or dedicated whatever) to run this plugin, otherwise auto bunnyhop won't work.
+# Auto Bunnyhop del lado del servidor para Left 4 Dead 2
 
-Note: this is Valve Server Plugin which is safely use, it doesn't require any injectors or some other magic.
+Este complemento funciona tanto en el servidor como en el cliente (para eliminar el efecto tembloroso y lento cuando haces bunnyhop), pero requiere un servidor (de escucha o dedicado) para ejecutar este complemento; de lo contrario, el bunnyhop automático no funcionará.
 
-# Installation
-First, download the DLL from Releases and move it to the folder `Left 4 Dead 2/left4dead2/`, then launch the game with launch parameter `-insecure`.
+Nota: este es un complemento de servidor de Valve que se puede usar de forma segura, no requiere ningún inyector ni ningún otro tipo de magia.
 
-Type the following command in the console: `plugin_load autobhop`.
+# Instalación
 
-The game will load the plugin and you will see green message about successful load (otherwise, red).
+Primero, descarga la DLL de Releases y muévela a la carpeta `Left 4 Dead 2/left4dead2/`, luego inicia el juego con el parámetro de inicio -insecure.
 
-### Auto Load
-To do not bother with manual loading you can tell the game to load the plugin automatically.
+Escribe el siguiente comando en la consola: plugin_load autobhop.
 
-Go to this folder `Left 4 Dead 2/left4dead2/addons/` and create file with such name `autobhop.vdf`.
+El juego cargará el complemento y verás un mensaje verde sobre la carga exitosa (de lo contrario, rojo).
 
-Then, copy and paste the following text to the file and save it.
+# Carga automática
 
-```
+Para no molestarte con la carga manual, puedes indicarle al juego que cargue el complemento automáticamente.
+
+Ve a esta carpeta `Left 4 Dead 2/left4dead2/addons/` y crea un archivo con el nombre `autobhop.vdf`.
+
+Luego, copia y pega el siguiente texto en el archivo y guárdalo.
+ ```
 "Plugin"
 {
 	"file"	"autobhop"
 }
 ```
+Ahora inicia el juego (con el parámetro de lanzamiento -insecure por supuesto), el plugin se cargará automáticamente.
 
-Now launch the game (with launch parameter `-insecure` ofc), the plugin will be loaded automatically.
+Parte del servidor
+La parte del servidor del plugin proporciona el bunnyhop y controla qué clientes pueden usarlo.
 
-# Server Part
-The server part of plugin provides the bunnyhop and controls what client can use it.
+Para deshabilitar o habilitar el bunnyhop automático para todos, usa la siguiente variable de consola (habilitada de manera predeterminada): `sv_autobunnyhop <0/1>`
 
-To disable or enable auto bunnyhop for everyone, use the following console variable (enabled by default): `sv_autobunnyhop <0/1>`
+Parte del cliente
+La parte del cliente del plugin usa un puente (mensajes de usuario y comandos de cliente) con el servidor para hacer posible alternar el bunnyhop automático.
 
-# Client Part
-The client part of plugin uses a bridge (user messages and client commands) with server to make it possible to toggle auto bunnyhop.
+La característica más importante: si juegas en un servidor que tiene este plugin, no verás el efecto tembloroso y lento durante el `bunnyhopping.`
 
-**The most important feature: if you will play on server that has this plugin, you won't see the shaky and laggy effect during bunnyhopping**.
+Para deshabilitar o habilitar el bunnyhop automático para usted, use el siguiente comando de consola (la consola no lo indicará porque es del lado del servidor): 
 
-To disable or enable auto bunnyhop for yourself, use the following console command (console won't hint it because it's server-side): `cl_autobunnyhop` (you can also pass additional argument `1` or `0` to force auto bunnyhop be enabled/disabled, i.e. `cl_autobunnyhop 1`)
+
+> // Alternar con la tecla "B"
+
+```
+bind "b" "toggle sv_autobunnyhop 0 1"
+```
