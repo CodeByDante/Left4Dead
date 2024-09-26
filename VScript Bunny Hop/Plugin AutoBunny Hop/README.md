@@ -19,7 +19,7 @@ Para no molestarte con la carga manual, puedes indicarle al juego que cargue el 
 Ve a esta carpeta `Left 4 Dead 2/left4dead2/addons/` y crea un archivo con el nombre `autobhop.vdf`.
 
 Luego, copia y pega el siguiente texto en el archivo y guárdalo.
- ```
+ ```bash
 "Plugin"
 {
 	"file"	"autobhop"
@@ -42,6 +42,6 @@ Para deshabilitar o habilitar el bunnyhop automático para usted, use el siguien
 
 > // Alternar con la tecla "B"
 
-```
+```bash
 bind "b" "toggle sv_autobunnyhop 0 1"
 ```
