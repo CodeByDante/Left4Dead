@@ -1,0 +1,2654 @@
+// ===================== Archivo Combinado =====================
+// Configuraciones de modos de juego fusionadas de ambos archivos.
+// Inicia la configuración consolidada a continuación:
+
+"GameModes"
+{
+"GameModes"
+{
+    "coop"
+    {
+        "base" "coop"
+        "maxplayers" "4"
+        
+        "x360ctx" "0"
+        "x360matchrule" "0"
+        "x360presence" "5"
+        
+        "x360presence:"
+        {
+            "network:offline" "11"
+            "play:commentary" "3"
+            "play:credits" "2"
+        }
+        
+        "hasdifficulty" "1"
+        "convar"
+        {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┓
+            // ────===     CONFIGURACIÓN DE GAMMA DEL MONITOR     ===───
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┛
+            mat_monitorgamma_tv_exp "3"                     // Establece la exposición gamma para monitores de TV
+            mat_monitorgamma_tv_range_min "0"               // Establece el rango mínimo de gamma para monitores de TV
+            
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┓
+            // ────===      CONFIGURACIÓN DE RAGDOLLS        ===───
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┛
+            cl_ragdoll_maxcount "0"                          // Establece el número máximo de ragdolls a 0 (sin ragdolls)
+            g_ragdoll_fadespeed "9999"                       // Aumenta la velocidad de desvanecimiento de ragdolls
+            g_ragdoll_lvfadespeed "9999"                     // Aumenta la velocidad de desvanecimiento de ragdolls de la vista en primera persona
+            
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┓
+            // ────===       CONFIGURACIÓN DE BOTS Y NPCs       ===───
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┛
+            cl_interp "0"
+            cl_interp_ratio "1"
+            cl_interp_npcs "0"
+            sv_client_min_interp_ratio "1"
+            
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┓
+            // ────=== CONFIGURACIÓN GRÁFICA PARA MEJORAR FPS   ===───
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┛
+            r_shadows_on_renderables_enable "0"             // Desactiva las sombras en objetos renderizables
+            z_mob_simple_shadows "2"                         // Establece el tipo de sombras simples para los zombis
+            mat_disable_bloom "1"                            // Desactiva el efecto de bloom (resplandor)
+            r_draw_flashlight_3rd_person "0"                // No dibuja la linterna en vista en tercera persona
+            r_maxdlights "0"                                 // Establece el número máximo de luces dinámicas a 0
+            r_shadowfromworldlights "0"                      // Desactiva sombras de luces del mundo
+            r_shadowmaxrendered "0"                          // Establece el número máximo de sombras renderizadas a 0
+            r_shadowrendertotexture "0"                      // No renderiza sombras a texturas
+            r_3dsky "0"                                      // Desactiva el cielo 3D
+            r_decals "1"                                     // Permite decals (marcas) en el juego
+            mat_reducefillrate "1"                           // Reduce la tasa de llenado de texturas
+            mat_reduceparticles "1"                           // Reduce el número de partículas
+            r_rootlod "2"                                    // Establece el nivel de detalle raíz (LOD) a 2
+            r_DrawDetailProps "0"                            // No dibuja objetos de detalle
+            r_WaterDrawRefraction "0"                        // Desactiva la refracción del agua
+            r_WaterDrawReflection "0"                         // Desactiva la reflexión del agua
+            
+            
+            // ======================= By EHC and Y-Griega ======================== \\
+            //	┏━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //ㅤ	  ---===       FPS BOOSTER & MEJORAS EXTRAS       ===---
+            //	┗━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━┛
+            r_shadowrendertotexture        "0"
+            cl_detail_max_sway              "0"
+            cl_detail_avoid_force           "1"
+            cl_detail_avoid_radius          "1"
+            r_ambientfraction               "0.2"
+            r_dynamic                       "0"
+            r_PhysPropStaticLighting        "0"
+            r_shadow_deferred_downsample    "1"
+            r_maxrenderable_dist            "2900"
+            mat_reduceparticles             "1"
+            r_fastzreject                   "1"
+            r_drawmodeldecals               "0"
+            r_eyemove                       "0"
+            mat_reducefillrate              "1"
+            r_shadowrendertotexture         "0"
+            cl_player_shadow_dist           "1"
+            r_rootlod                       "2"
+            r_lod_switch_scale              "0.9"
+            r_skyboxfogfactor               "0"
+            muzzleflash_light               "0"
+            
+            //--FPS BOOSTER V1.5 "POWER"
+            
+            //r_flashlightmuzzleflash         "0"
+            //r_flashlightmuzzleflashfov      "1"
+            r_flashlightinfectedfov		"90"    //
+            r_flashlightmodels 		"1"
+            r_flashlightinfectedshadows     "0"
+            r_flashlightshadows             "0"
+            r_flashlightvolumetrics 	"1"
+            //r_flashligtfov                "75"
+            r_flashlightbrightness 		"0.5"
+            mat_postprocess_x 		"0"
+            mat_postprocess_y 		"0"
+            z_infected_shadows 		"0"
+            fx_drawimpactdebris 		"0"
+            fx_drawimpactdust 		"0"
+            fx_drawmetalspark 		"0"
+            cl_ejectbrass 			"0"
+            fx_drawimpactdebris             "0"    //
+            fx_drawmetalspark               "0"    //
+            cl_impacteffects                "0"    //
+            
+            //---=== BOOSTER CPU Y GPU----------------------------------------------------------------------------------------------------------------------
+            
+            cl_threaded_bone_setup 	        "1"
+            cl_threaded_init 		"1"
+            r_threaded_particles 		"1"
+            r_threaded_shadow_clip 	        "1"
+            
+            //---=== TECLADO (INPUT)------------------------------------------------------------------------------------------------------------------------
+            
+            in_usekeyboardsampletime 	"0"
+            
+            //---=== FPS BOOSTER EXTRA - SIMPLE-------------------------------------------------------------------------------------------------------
+            
+            r_shadowmaxrendered             "0"
+            r_3dsky                         "1"
+            r_decals                        "9"
+            r_maxmodeldecal                 "9"    //
+            r_shadows_on_renderables_enable "0"
+            z_mob_simple_shadows            "0"
+            r_draw_flashlight_3rd_person    "0"
+            r_maxdlights                    "0"
+            r_shadowfromworldlights         "0"
+            r_DrawDetailProps               "0"
+            mat_shadowstate                 "0"
+            
+            //---=== QUITA MOVIMIENTOS DE LOS OJOS (SUPERVIVIENTES)-----------------------------------------------------------------------------------
+            
+            r_eyemove 0
+            r_eyemove 0
+            r_eyeshift_z 0
+            r_eyeshift_y 0
+            r_eyeshift_x 0
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    }
+    
+    "realism"
+    {
+        "base"		"realism"
+        "maxplayers"    "4"	// realism
+        "x360ctx"	"6"
+        "x360matchrule"		"0"
+        "x360presence"		"5"
+        
+        "hasdifficulty"		"1"
+        
+        // set base gamemode convars first, then the current gamemode
+        convar
+        {
+            sv_disable_glow_survivors 1
+            sv_disable_glow_faritems 1
+            sv_rescue_disabled 1
+            z_non_head_damage_factor_multiplier 0.5
+            z_head_damage_causes_wounds 1
+            z_use_next_difficulty_damage_factor 1
+            z_witch_always_kills 1
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "survival"
+    {
+        "base"		"survival"
+        "maxplayers"    "4"	// survival
+        "x360ctx"	"3"
+        "x360matchrule"		"2"
+        "x360matchruleteam"	"3"
+        "x360presence"		"9"
+        
+        "singlechapter"		"1"
+        
+        convar
+        {
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "versus"
+    {
+        "base"		"versus"
+        "maxplayers"    "8"	// versus
+        "x360ctx"	"1"
+        "x360matchrule"		"1"
+        "x360matchruleteam"	"3"
+        "x360presence"		"7"
+        
+        "playercontrolledzombies"	"1"
+        
+        convar
+        {
+            "z_scrimmage_creep_delay" 0
+            "z_scrimmage_creep_rate" 100
+            "z_spawn_safety_range" 200
+            "tongue_miss_delay" 3
+            "tongue_hit_delay" 15
+            "tongue_dropping_to_ground_time" 0.5
+            "tongue_los_forgiveness_time" 1.5
+            "tongue_no_progress_choke_early_delay" 1.0
+            "z_pounce_stumble_radius" 160
+            "z_pounce_damage_interrupt" 150
+            "z_hunter_limit" 2
+            "z_smoker_limit" 2
+            "z_max_stagger_duration" 0.9
+            "sv_alltalk" 0
+            "z_ghost_los_expected_progress" 2000
+            "tongue_choke_damage_amount" 5
+            "tongue_break_from_damage_amount" 300
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            // these are 360 only convar changes, if you prefix with 360_, they'll
+            // get set on 360 and dedicated for 360
+            "360_z_mega_mob_size" 25
+            "360_z_mob_spawn_max_size" 18
+            "360_z_versus_wandering_density" 0.026
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACION DE PANTALLA ===---
+            //      ┗━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━┛
+            
+            mat_disable_bloom               "0"
+            mat_motion_blur_enable          "1"
+            mat_vignette_enable             "0"
+            mat_bloom_scalefactor_scalar    "0.6"    //
+            mat_grain_scale_override        "0"
+            func_break_max_pieces           "0"
+            mat_colorcorrection             "1"
+            mat_colorcorrection_enable      "1"
+            mat_bloomscale                  "0.6"    //
+            mat_hdr_enabled                 "1"      //
+            mat_heatdistortion              "0"
+            mat_lensflares                  "0"
+            
+            //--PANTALLA V1.0 "POWER"
+            
+            cl_viewbob 			"0"
+            mat_force_vertexfog		"0"
+            mat_forcehardwaresync 		"0"
+            mat_grain_enable 		"0"
+            r_ambientboost 			"1"
+            mat_software_aa_blur_one_pixel_lines "0"
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "scavenge"
+    {
+        "base"		"scavenge"
+        "maxplayers"    "8"	// scavenge
+        "x360ctx"	"4"
+        "x360matchrule"		"4"
+        "x360matchruleteam"	"5"
+        "x360presence"		"9"
+        
+        "singlechapter"		"1"
+        "hasroundlimit"		"1"
+        
+        "playercontrolledzombies"	"1"
+        
+        convar
+        {
+            "z_scrimmage_creep_delay" 0
+            "z_scrimmage_creep_rate" 100
+            "z_spawn_safety_range" 200
+            "tongue_miss_delay" 3
+            "tongue_hit_delay" 15
+            "tongue_dropping_to_ground_time" 0.5
+            "tongue_los_forgiveness_time" 1.5
+            "tongue_no_progress_choke_early_delay" 1.0
+            "z_pounce_stumble_radius" 160
+            "z_pounce_damage_interrupt" 150
+            "z_hunter_limit" 2
+            "z_smoker_limit" 2
+            "z_max_stagger_duration" 0.9
+            "sv_alltalk" 0
+            "z_ghost_los_expected_progress" 2000
+            "tongue_choke_damage_amount" 5
+            "tongue_break_from_damage_amount" 300
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            // these are 360 only convar changes, if you prefix with 360_, they'll
+            // get set on 360 and dedicated for 360
+            "360_z_mega_mob_size" 25
+            "360_z_mob_spawn_max_size" 18
+            "360_z_versus_wandering_density" 0.026
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation1"
+    {
+        "base"		"coop"
+        "maxplayers"    "1"
+        "achievementindex"	"0"
+        "x360ctx"	"7"
+        "x360presence" 	"13"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/last_man_on_earth"
+        
+        convar
+        {
+            z_jockey_ride_damage 15
+            z_pounce_damage 10
+            tongue_choke_damage_amount 15
+            tongue_drag_damage_amount 15
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation2"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"1"
+        "x360ctx"	"8"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/headshot"
+        convar
+        {
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation3"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"2"
+        "x360ctx"	"9"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/bleed_out"
+        
+        convar
+        {
+            pain_pills_decay_rate 0.27
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation4"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"3"
+        "x360ctx"	"10"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/hard_eight"
+        convar
+        {
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation5"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"4"
+        "x360ctx"	"11"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/four_swordsmen"
+        
+        convar
+        {
+            sb_melee_approach_victim 1
+            sv_infected_riot_control_tonfa_probability 0
+            
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation7"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"6"
+        "x360ctx"	"13"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/chainsaw_massacre"
+        
+        convar
+        {
+            sb_melee_approach_victim 1
+            sv_infected_riot_control_tonfa_probability 0
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation8"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"7"
+        "x360ctx"	"14"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/iron_man"
+        
+        convar
+        {
+            sv_permawipe 1
+            sv_disable_glow_survivors 1
+            sv_disable_glow_faritems 1
+            sv_rescue_disabled 1
+            z_non_head_damage_factor_multiplier 0.5
+            z_head_damage_causes_wounds 1
+            z_use_next_difficulty_damage_factor 1
+            z_witch_always_kills 1
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation9"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"8"
+        "x360ctx"	"15"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/gnome"
+        
+        convar
+        {
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation10"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"9"
+        "x360ctx"	"16"
+        "x360presence"	"5"
+        "x360presence:"
+        {
+            "state:game"	"10"
+        }
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/first_survivor_out"
+        convar
+        {
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation11"
+    {
+        "base"		"versus"
+        "maxplayers"    "8"
+        "achievementindex"	"10"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"18"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/healthpackalypse"
+        
+        convar
+        {
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation12"
+    {
+        "base"		"versus"
+        "maxplayers"    "8"
+        "achievementindex"	"13"	// intentionally mis-numbered
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"20"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "hidden"	"1"
+        
+        convar
+        {
+            sv_disable_glow_survivors 1
+            sv_disable_glow_faritems 1
+            sv_rescue_disabled 1
+            z_non_head_damage_factor_multiplier 0.5
+            z_head_damage_causes_wounds 1
+            z_use_next_difficulty_damage_factor 1
+            z_witch_always_kills 1
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation13"
+    {
+        "base"		"scavenge"
+        "maxplayers"    "8"
+        "achievementindex"	"12"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"22"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/follow_the_liter"
+        
+        convar
+        {
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation14"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"11"	// intentionally mis-numbered
+        "x360ctx"	"24"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/gib_fest"
+        
+        convar
+        {
+            "sv_infinite_primary_ammo" 1
+            sv_infected_riot_control_tonfa_probability 0
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation15"
+    {
+        "base"		"survival"
+        "maxplayers"    "8"
+        "achievementindex"	"14"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"28"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/versus_survival"
+        
+        convar
+        {
+            "z_scrimmage_creep_delay" 0
+            "z_scrimmage_creep_rate" 100
+            "z_spawn_safety_range" 200
+            "tongue_miss_delay" 3
+            "tongue_hit_delay" 15
+            "tongue_dropping_to_ground_time" 0.5
+            "tongue_los_forgiveness_time" 1.5
+            "tongue_no_progress_choke_early_delay" 1.0
+            "z_pounce_stumble_radius" 160
+            "z_pounce_damage_interrupt" 150
+            "z_hunter_limit" 2
+            "z_smoker_limit" 2
+            "z_max_stagger_duration" 0.9
+            "sv_alltalk" 0
+            "z_ghost_los_expected_progress" 2000
+            "tongue_choke_damage_amount" 5
+            "tongue_break_from_damage_amount" 300
+            "director_special_initial_spawn_delay_min" 2
+            "director_special_initial_spawn_delay_max" 10
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation16"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"15"
+        "x360ctx"	"25"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/hunting_party"
+        convar
+        {
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation17"
+    {
+        "base"		"coop"
+        "maxplayers"    "1"
+        "achievementindex"	"16"
+        "x360ctx"	"17"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/lone_gunman"
+        
+        convar
+        {
+            sv_infected_riot_control_tonfa_probability 0
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "mutation18"
+    {
+        "base"		"versus"
+        "maxplayers"    "8"
+        "achievementindex"	"17"
+        "x360ctx"	"26"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/bleed_out_versus"
+        
+        "playercontrolledzombies"	"1"
+        
+        convar
+        {
+            pain_pills_decay_rate 0.27
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation19"
+    {
+        "base"		"versus"
+        "maxplayers"    "8"
+        "achievementindex"	"18"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"30"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/tank_tank_tank"
+        
+        convar
+        {
+            "z_spawn_safety_range" 600
+            "z_ghost_travel_distance" 2000
+            "z_tank_health" 2000
+            "z_frustration" 0
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "mutation20"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"19"
+        "x360ctx"	"31"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Valve"
+        "Image"		"vgui/blog/healing_gnome"
+        
+        convar
+        {
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "community1" // special delivery
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"5"
+        "x360ctx"	"32"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Rayman1103"
+        "Image"		"vgui/blog/special_delivery"
+        
+        convar
+        {
+            car_alarm_chirp_distance 0
+            car_alarm_distance 0
+            hud_deathnotice_threats 1
+            z_boomer_gibs 1
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "community2"
+    {
+        
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"5"
+        "x360ctx"	"33"
+        "dlcmask"	"0x0000000000000002"
+        "hasdifficulty"		"1"
+        "builtin"	"1"
+        "Author"	"SR69MMJC and Karma Jockey"
+        "Image"		"vgui/blog/flu_season"
+        
+        convar
+        {
+            "sb_max_team_melee_weapons" 1
+            "ai_talk_idle_enabled" 1
+            "sb_vomit_blind_time" 0.1
+            "boomer_vomit_delay" 0.1
+            "z_vomit_fade_duration" 0.1
+            "z_vomit_fade_start" 0.1
+            "z_vomit_duration" 1
+            "z_vomit_interval" 0.1
+            "z_vomit_fatigue" 0.1
+            "z_vomit_range" 150
+            "z_exploding_splat_radius" 1
+            "z_exploding_health" 100
+            "z_exploding_speed" 350
+            "z_exploding_shove_max" 99
+            "z_exploding_shove_min" 99
+            "boomer_exposed_time_tolerance" 0.1
+            "boomer_pz_claw_dmg" 15
+            "z_wandering_density" 0
+            "z_scout_mob_spawn_range" 1000
+            "director_no_mobs" 1
+            "z_health" 100
+            "z_spawn_mobs_behind_chance" 0
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "community3"
+    {
+        "base"		"versus"
+        "maxplayers"	"8"
+        "achievementindex"	"5"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"34"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Winded"
+        "Image"		"vgui/blog/riding_my_survivor"
+        
+        convar
+        {
+            z_jockey_health 500
+            z_jockey_speed 450
+            z_jockey_ride_damage 10
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+    "community4"
+    {
+        "base"		"survival"
+        "maxplayers"    "4"
+        "achievementindex"	"5"
+        "x360ctx"	"35"
+        "dlcmask"	"0x0000000000000002"
+        "hasdifficulty"		"1"
+        "builtin"	"1"
+        "Author"	"Karma Jockey"
+        "Image"		"vgui/blog/nightmare"
+        
+        convar
+        {
+            "z_hunter_health" 300
+            "z_charger_health" 300
+            "z_spitter_health" 300
+            "z_charger_allow_shove" 1
+            "director_no_mobs" 1
+            "z_special_spawn_interval" 10
+            "director_special_respawn_interval" 10
+            "director_special_initial_spawn_delay_min" 10
+            "director_special_initial_spawn_delay_max" 30
+            "sv_disable_glow_survivors" 1
+            "sv_disable_glow_faritems" 1
+            "intensity_decay_time" 15
+            "director_relax_max_interval" 20
+            "director_relax_min_interval" 10
+            "first_aid_heal_percent" 0.9
+            "pain_pills_health_value" 65
+            "pain_pills_decay_rate" 0.21
+            "director_scavenge_item_override" 1
+            "director_pain_pill_density" 7.48
+            "director_pipe_bomb_density" 7.48
+            "director_molotov_density" 7.48
+            "director_pistol_density" 6
+            "fog_override" 1
+            "fog_enable" 1
+            "fog_start" 242
+            "fog_end" 730
+            "fog_startskybox" -10000
+            "fog_endskybox" -10000
+            "fog_enableskybox" 1
+            "z_tank_health" 5000
+            "z_tank_throw_force" 1200
+            "z_tank_throw_health" 200
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "community5"
+    {
+        "base"		"coop"
+        "maxplayers"    "4"
+        "achievementindex"	"5"
+        "x360ctx"	"36"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"Rayman1103"
+        "Image"		"vgui/blog/deaths_door"
+        
+        "hasdifficulty"		"1"
+        convar
+        {
+            "survivor_max_incapacitated_count" 0
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+        }
+    "community6"
+    {
+        "base"		"versus"
+        "maxplayers"	"8"
+        "achievementindex"	"5"
+        "playercontrolledzombies"	"1"
+        "x360ctx"	"37"
+        "dlcmask"	"0x0000000000000002"
+        "builtin"	"1"
+        "Author"	"ProdigySim"
+        "Image"		"vgui/blog/confogl"
+        
+        convar
+        {
+            "sv_infected_ceda_vomitjar_probability" 0
+            "sv_infected_riot_control_tonfa_probability" 0
+            "z_fallen_max_count" 0
+            "gascan_spit_time" 2
+            "z_mob_spawn_min_size" 25
+            "z_mob_spawn_max_size" 25
+            "z_mob_spawn_min_interval_normal" 999999
+            "z_mob_spawn_max_interval_normal" 999999
+            "ammo_shotgun_max" 80
+            "ammo_huntingrifle_max" 220
+            "sv_force_time_of_day" 0
+            "z_ghost_delay_min" 20
+            "z_ghost_delay_max" 20
+            "director_vs_convert_pills" 0
+            "director_convert_pills" 0
+            "director_convert_pills_critical_health" 0
+            "director_convert_pills_to_defib_health" 0
+            "versus_tank_chance" 1
+            "versus_tank_chance_finale" 1
+            "versus_tank_chance_intro" 1
+            "versus_tank_flow_team_variation" 0
+            "versus_witch_chance" 0.75
+            "versus_witch_chance_finale" 0
+            "versus_witch_chance_intro" 0
+            "versus_boss_flow_max" 0.9
+            "versus_boss_flow_max_intro" 0.9
+            "versus_boss_flow_min" 0.15
+            "versus_boss_flow_min_intro" 0.15
+            "z_witch_damage_per_kill_hit" 75
+            "z_witch_personal_space" 240
+            "z_leap_interval_post_incap" 15
+            "z_jockey_control_variance" 0.15
+            "z_finale_spawn_safety_range" 150
+            "z_gun_swing_vs_min_penalty" 1
+            
+            // Mega mob size should be intact for 360. (25)
+            "360_z_mob_spawn_min_size" 18
+            "360_z_mob_spawn_max_size" 18
+            
+            
+            
+            
+            
+            //      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            //        ---=== CONFIGURACIÓN AVANZADA DE INTERPOLACIÓN Y FÍSICA ===---
+            //      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━°❀•°✮°•❀°━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            
+            //---=== CONFIGURACIÓN GENERAL DE INTERPOLACIÓN Y FÍSICA----------------------------------------------------------------------------------
+            
+            cl_interp_all                   "1"
+            cl_interpolate                  "1"
+            cl_ragdoll_physics_enable       "0"     //
+            
+            //--CONFIGURACION (RAGDOLLS)
+            
+            cl_phys_maxticks 		"2"
+            cl_ragdoll_self_collision 	"0"
+            ragdoll_sleepaftertime 		"0.4"   //
+            
+            //---=== Interpolación solo para NPC (ajuste experimental) -------------------------------------------------------------------------------
+            
+            //cl_interp_commonspitter         "0"
+            //cl_interp_commonjockey          "0"
+            //cl_interp_commoncharger         "0"
+            //cl_interp_commonboomer          "0"
+            //cl_interp_commonhunter          "0"
+            //cl_interp_commonsmoker          "0"
+            //cl_interp_commontank            "0"
+            //cl_interp_commonwitch           "0"
+            
+            //---=== Interpolación para NPC (ajuste)-------------------------------------------------------------------------------------------------
+            
+            cl_interp_npcs                  "0.055"
+            
+            
+        }
+}{
+	"coop"
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+
+		"hasdifficulty"		"1"
+		
+		convar
+		{
+			r_shadows_on_renderables_enable 0
+			z_mob_simple_shadows 2
+			mat_disable_bloom 1
+			r_draw_flashlight_3rd_person 0
+			r_maxdlights 0
+			r_shadowfromworldlights 0
+			r_shadowmaxrendered 0
+			r_shadowrendertotexture 0
+			mat_reducefillrate 1
+			mat_reduceparticles 1
+			r_rootlod 2
+			r_DrawDetailProps 0
+			r_WaterDrawRefraction 0
+			r_WaterDrawReflection 0
+			allow_all_bot_survivor_team 1
+			sv_client_min_interp_ratio -1
+			cl_interp_npcs 0.1
+			cl_ragdoll_maxcount 0
+			g_ragdoll_fadespeed 9999
+			g_ragdoll_lvfadespeed 9999
+			mat_monitorgamma_tv_exp 3
+			mat_monitorgamma_tv_range_min 0
+		}
+	}
+	"realism"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	// realism
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+
+		"hasdifficulty"		"1"
+
+		// set base gamemode convars first, then the current gamemode
+		convar
+		{
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			r_shadows_on_renderables_enable 0
+			z_mob_simple_shadows 2
+			mat_disable_bloom 1
+			r_draw_flashlight_3rd_person 0
+			r_maxdlights 0
+			r_shadowfromworldlights 0
+			r_shadowmaxrendered 0
+			r_shadowrendertotexture 0
+			mat_reducefillrate 1
+			mat_reduceparticles 1
+			r_rootlod 2
+			r_DrawDetailProps 0
+			r_WaterDrawRefraction 0
+			r_WaterDrawReflection 0
+			allow_all_bot_survivor_team 1
+			sv_client_min_interp_ratio -1
+			cl_interp_npcs 0.1
+			cl_ragdoll_maxcount 0
+			g_ragdoll_fadespeed 9999
+			g_ragdoll_lvfadespeed 9999
+			mat_monitorgamma_tv_exp 3
+			mat_monitorgamma_tv_range_min 0
+		}
+	"survival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		
+		convar
+		{
+			r_shadows_on_renderables_enable 0
+			z_mob_simple_shadows 2
+			mat_disable_bloom 1
+			r_draw_flashlight_3rd_person 0
+			r_maxdlights 0
+			r_shadowfromworldlights 0
+			r_shadowmaxrendered 0
+			r_shadowrendertotexture 0
+			r_3dsky 0
+			mat_reducefillrate 1
+			mat_reduceparticles 1
+			r_rootlod 2
+			r_WaterDrawRefraction 0
+			r_WaterDrawReflection 0
+			
+			allow_all_bot_survivor_team 1
+			sv_client_min_interp_ratio -1
+			cl_interp_npcs 0.1
+			cl_ragdoll_maxcount 0
+			g_ragdoll_fadespeed 9999
+			g_ragdoll_lvfadespeed 9999 0
+		}
+	"versus"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+			
+			r_shadows_on_renderables_enable 0
+			z_mob_simple_shadows 2
+			mat_disable_bloom 1
+			r_draw_flashlight_3rd_person 0
+			r_maxdlights 0
+			r_shadowfromworldlights 0
+			r_shadowmaxrendered 0
+			r_shadowrendertotexture 0
+			mat_reducefillrate 1
+			mat_reduceparticles 1
+			r_rootlod 2
+			r_DrawDetailProps 0
+			r_WaterDrawRefraction 0
+			r_WaterDrawReflection 0
+			allow_all_bot_survivor_team 1
+			sv_client_min_interp_ratio -1
+			cl_interp_npcs 0.1
+			cl_ragdoll_maxcount 0
+			g_ragdoll_fadespeed 9999
+			g_ragdoll_lvfadespeed 9999
+			mat_monitorgamma_tv_exp 3
+			mat_monitorgamma_tv_range_min 0
+		}
+	"scavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	// scavenge
+		"x360ctx"	"4"
+		"x360matchrule"		"4"
+		"x360matchruleteam"	"5"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		"hasroundlimit"		"1"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+			
+			r_shadows_on_renderables_enable 0
+			z_mob_simple_shadows 2
+			mat_disable_bloom 1
+			r_draw_flashlight_3rd_person 0
+			r_maxdlights 0
+			r_shadowfromworldlights 0
+			r_shadowmaxrendered 0
+			r_shadowrendertotexture 0
+			mat_reducefillrate 1
+			mat_reduceparticles 1
+			r_rootlod 2
+			r_DrawDetailProps 0
+			r_WaterDrawRefraction 0
+			r_WaterDrawReflection 0
+			allow_all_bot_survivor_team 1
+			sv_client_min_interp_ratio -1
+			cl_interp_npcs 0.1
+			cl_ragdoll_maxcount 0
+			g_ragdoll_fadespeed 9999
+			g_ragdoll_lvfadespeed 9999
+			mat_monitorgamma_tv_exp 3
+			mat_monitorgamma_tv_range_min 0
+		}
+	"mutation1"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"0"
+		"x360ctx"	"7"
+		"x360presence" 	"13"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/last_man_on_earth"
+
+		convar
+		{
+			z_jockey_ride_damage 15
+			z_pounce_damage 10
+			tongue_choke_damage_amount 15
+			tongue_drag_damage_amount 15
+		}
+	"mutation2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"1"
+		"x360ctx"	"8"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/headshot"
+	}
+	"mutation3"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"2"
+		"x360ctx"	"9"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/bleed_out"
+
+		convar
+		{
+			pain_pills_decay_rate 0.27
+		}
+	"mutation4"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"3"
+		"x360ctx"	"10"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/hard_eight"
+	}
+	"mutation5"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"4"
+		"x360ctx"	"11"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/four_swordsmen"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	"mutation7"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"6"
+		"x360ctx"	"13"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/chainsaw_massacre"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	"mutation8"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"7"
+		"x360ctx"	"14"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/iron_man"
+
+		convar
+		{
+			sv_permawipe 1
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+		}
+	"mutation9"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"8"
+		"x360ctx"	"15"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/gnome"
+	}
+	"mutation10"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"9"
+		"x360ctx"	"16"
+		"x360presence"	"5"
+		"x360presence:"
+		{
+			"state:game"	"10"
+		}
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/first_survivor_out"
+	"mutation11"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"10"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"18"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/healthpackalypse"
+
+		convar
+		{
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	"mutation12"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"13"	// intentionally mis-numbered
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"20"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"hidden"	"1"
+
+		convar
+		{
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	"mutation13"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"12"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"22"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/follow_the_liter"
+
+		convar
+		{
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	"mutation14"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"11"	// intentionally mis-numbered
+		"x360ctx"	"24"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/gib_fest"
+
+		convar
+		{
+			"sv_infinite_primary_ammo" 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	"mutation15"
+	{
+		"base"		"survival"
+		"maxplayers"    "8"
+		"achievementindex"	"14"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"28"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/versus_survival"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	"mutation16"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"15"
+		"x360ctx"	"25"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/hunting_party"
+	}
+	"mutation17"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/lone_gunman"
+
+		convar
+		{
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	"mutation18"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"17"
+		"x360ctx"	"26"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/bleed_out_versus"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			pain_pills_decay_rate 0.27
+		}
+	"mutation19"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"18"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"30"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/tank_tank_tank"
+		
+		convar
+		{
+			"z_spawn_safety_range" 600
+			"z_ghost_travel_distance" 2000
+			"z_tank_health" 2000
+			"z_frustration" 0
+		}		
+	"mutation20"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"19"
+		"x360ctx"	"31"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Valve"
+		"Image"		"vgui/blog/healing_gnome"
+	}
+	"community1" // special delivery
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"32"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Rayman1103"
+		"Image"		"vgui/blog/special_delivery"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+		}
+	"community2"
+	{
+
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"33"
+		"dlcmask"	"0x0000000000000002"
+		"hasdifficulty"		"1"
+		"builtin"	"1"
+		"Author"	"SR69MMJC and Karma Jockey"
+		"Image"		"vgui/blog/flu_season"
+
+		convar
+		{
+			"sb_max_team_melee_weapons" 1
+			"ai_talk_idle_enabled" 1
+			"sb_vomit_blind_time" 0.1
+			"boomer_vomit_delay" 0.1
+			"z_vomit_fade_duration" 0.1
+			"z_vomit_fade_start" 0.1
+			"z_vomit_duration" 1
+			"z_vomit_interval" 0.1
+			"z_vomit_fatigue" 0.1
+			"z_vomit_range" 150
+			"z_exploding_splat_radius" 1
+			"z_exploding_health" 100
+			"z_exploding_speed" 350
+			"z_exploding_shove_max" 99
+			"z_exploding_shove_min" 99
+			"boomer_exposed_time_tolerance" 0.1
+			"boomer_pz_claw_dmg" 15
+			"z_wandering_density" 0
+			"z_scout_mob_spawn_range" 1000
+			"director_no_mobs" 1
+			"z_health" 100	
+			"z_spawn_mobs_behind_chance" 0
+		}
+	"community3"
+	{
+		"base"		"versus"
+		"maxplayers"	"8"
+		"achievementindex"	"5"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"34"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Winded"
+		"Image"		"vgui/blog/riding_my_survivor"
+
+		convar
+		{
+			z_jockey_health 500
+			z_jockey_speed 450
+			z_jockey_ride_damage 10
+		}
+	"community4"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"35"
+		"dlcmask"	"0x0000000000000002"
+		"hasdifficulty"		"1"
+		"builtin"	"1"
+		"Author"	"Karma Jockey"
+		"Image"		"vgui/blog/nightmare"
+
+		convar
+		{
+			"z_hunter_health" 300
+			"z_charger_health" 300
+			"z_spitter_health" 300
+			"z_charger_allow_shove" 1
+			"director_no_mobs" 1
+			"z_special_spawn_interval" 10
+			"director_special_respawn_interval" 10
+			"director_special_initial_spawn_delay_min" 10
+			"director_special_initial_spawn_delay_max" 30
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"intensity_decay_time" 15
+			"director_relax_max_interval" 20
+			"director_relax_min_interval" 10
+			"first_aid_heal_percent" 0.9
+			"pain_pills_health_value" 65
+			"pain_pills_decay_rate" 0.21
+			"director_scavenge_item_override" 1
+			"director_pain_pill_density" 7.48
+			"director_pipe_bomb_density" 7.48
+			"director_molotov_density" 7.48
+			"director_pistol_density" 6
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 242
+			"fog_end" 730
+			"fog_startskybox" -10000
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"z_tank_health" 5000
+			"z_tank_throw_force" 1200
+			"z_tank_throw_health" 200
+		}
+	"community5"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"36"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"Rayman1103"
+		"Image"		"vgui/blog/deaths_door"
+		
+		"hasdifficulty"		"1"
+		convar
+		{
+			"survivor_max_incapacitated_count" 0
+		}
+	"community6"
+	{
+		"base"		"versus"
+		"maxplayers"	"8"
+		"achievementindex"	"5"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"37"
+		"dlcmask"	"0x0000000000000002"
+		"builtin"	"1"
+		"Author"	"ProdigySim"
+		"Image"		"vgui/blog/confogl"
+
+		convar
+		{
+			"sv_infected_ceda_vomitjar_probability" 0
+			"sv_infected_riot_control_tonfa_probability" 0
+			"z_fallen_max_count" 0
+			"gascan_spit_time" 2
+			"z_mob_spawn_min_size" 25
+			"z_mob_spawn_max_size" 25
+ 			"z_mob_spawn_min_interval_normal" 999999
+			"z_mob_spawn_max_interval_normal" 999999
+			"ammo_shotgun_max" 80
+			"ammo_huntingrifle_max" 220
+			"sv_force_time_of_day" 0
+			"z_ghost_delay_min" 20
+			"z_ghost_delay_max" 20
+			"director_vs_convert_pills" 0
+			"director_convert_pills" 0
+			"director_convert_pills_critical_health" 0
+			"director_convert_pills_to_defib_health" 0
+			"versus_tank_chance" 1
+			"versus_tank_chance_finale" 1
+			"versus_tank_chance_intro" 1
+			"versus_tank_flow_team_variation" 0
+			"versus_witch_chance" 0.75
+			"versus_witch_chance_finale" 0
+			"versus_witch_chance_intro" 0
+			"versus_boss_flow_max" 0.9
+			"versus_boss_flow_max_intro" 0.9
+			"versus_boss_flow_min" 0.15
+ 			"versus_boss_flow_min_intro" 0.15
+			"z_witch_damage_per_kill_hit" 75
+			"z_witch_personal_space" 240
+			"z_leap_interval_post_incap" 15
+			"z_jockey_control_variance" 0.15
+			"z_finale_spawn_safety_range" 150
+			"z_gun_swing_vs_min_penalty" 1
+
+			// Mega mob size should be intact for 360. (25)
+			"360_z_mob_spawn_min_size" 18
+			"360_z_mob_spawn_max_size" 18
+		}
+}
